@@ -1,0 +1,544 @@
+@import'./helpers/helpers-dir';
+
+.body_inner {
+    background-image: url(../assets/images/banner3.jpg);
+    background-size: 100%;
+
+    header {
+
+        .top-navbar {
+            padding: 18px;
+
+            @include breakpoint(md) {
+                padding: 10px 0px;
+            }
+
+            .top-navbar-links {
+                justify-content: end;
+                font-size: 13px;
+
+                @include breakpoint(md) {
+                    font-size: 10px;
+                    justify-content: space-between;
+                }
+
+                li {
+                    margin-left: 10px;
+
+                    i {
+                        color: #0090ff;
+                    }
+
+                    .timer span {
+                        margin-left: 10px;
+                        font-family: "Roboto Slab", sans-serif;
+                        
+                    }
+                }
+            }
+
+        }
+
+        .main-navbar {
+            @include breakpoint(md) {
+                padding: 20px 10px;
+            }
+
+            .inner-navbar {
+                // border-top: 2px solid #558e0a;
+                align-items: center;
+
+                justify-content: space-between;
+
+                .web-logo img {
+                    width: 250px;
+                    height: 60px;
+
+                    @include breakpoint(md) {
+                        align-self: flex-start;
+                    }
+                }
+
+                nav {
+                    @include breakpoint(md) {
+                        display: none;
+                    }
+
+                    .nav-links {
+                        li {
+                            margin-left: 10px;
+
+                            a {
+                                font-size: 16px;
+                                padding: 10px;
+                                color: white;
+
+                                @include breakpoint(lg) {
+                                    font-size: 14px;
+
+                                }
+
+                                &:hover {
+                                    background-color: $main_color;
+                                }
+                            }
+
+                        }
+                        .contact-li{
+                           
+                            #box {
+                                z-index:10;
+                                position:relative;  
+                              }
+                              #box form {
+                               background:white;
+                               padding:5px;
+                               display:none;
+                               position:absolute;
+                               top:47px;
+                               width: 500px;
+                               right:10px;
+                               height: 400px;
+                               border: 1px solid white;
+
+                               color: black;
+                            
+                               table{
+                                border: none;
+                                padding: 20px;
+                                background:white;
+                               }
+                            table tr td{
+                                border: none;
+                                color: black;
+                                margin-top: 10px;
+                            }
+
+                           
+                              }
+                            //   #contact {
+                            //     width:75px;
+
+                            //     color:#fff;
+                            //     padding:3px 10px;
+                            //     margin-bottom:15px;  
+                            //     cursor:pointer;
+                            //   }
+                              input[type="submit"] {
+                              background-color: #558e0a;
+                                color:#fff;
+                                border:none;
+                                text-align:left;
+                                cursor:pointer;
+                                padding: 10px 15px;
+                              }
+                              input[type="reset"] {
+                                background-color:blue;
+                                  color:#fff;
+                                  border:none;
+                                  text-align:left;
+                                  cursor:pointer;
+                                  padding: 10px 15px;
+                                }
+                        }
+                    }
+
+                    &.fixed-header {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: white;
+                        padding-left: 200px;
+                        box-shadow: 0 8px 6px -6px black;
+                        z-index: 999;
+                        padding-top: 20px;
+                        height: 60px;
+
+                        .nav-links {
+                            li {
+                                a {
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+
+                }
+
+                .btn-ol-booking {
+                    width: 170px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    background-color: $main_color;
+                    border-radius: 25px;
+                    // opacity: 0.6;
+                    transition: 0.3s;
+
+                    @include breakpoint(md) {
+                        margin-left: 200px;
+                    }
+
+                    @include breakpoint(sm) {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background-image: linear-gradient(to right, #aee468, #93f106);
+                        // opacity: 1;
+                    }
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+    .banner {
+        position: relative;
+        padding: 160px 0px 150px 0px;
+
+        @include breakpoint(md) {
+            padding: 120px 0px 120px 0px;
+        }
+
+        @include breakpoint(sm) {
+            padding: 80px 0px 80px 0px;
+        }
+
+        .inner-banner {
+
+            .banner-content {
+                padding: 10px;
+
+                .banner-title {
+                    font-size: 78px;
+                    color: #558e0a;
+                    font-family: "Roboto Slab", sans-serif;
+                    font-weight: 700;
+
+                    @include breakpoint(md) {
+                        font-size: 58px;
+                    }
+
+                    @include breakpoint(md) {
+                        font-size: 40px;
+                    }
+
+                    .banner-title-animation {
+                        color: #8aec0a;
+                        margin: 20px 0px;
+
+                    }
+                }
+
+
+                .bannerinfo {
+                    color: white;
+                    transform: scale(0.84);
+                    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+                    @keyframes scale {
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    .bannerinfo span {
+                        display: inline-block;
+                        opacity: 0;
+                        filter: blur(4px);
+                    }
+
+                    .bannerinfo span:nth-child(1) {
+                        animation: fade-in 0.15s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        display: block;
+                    }
+
+                    .bannerinfo span:nth-child(2) {
+                        animation: fade-in 2.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                    }
+
+                    @keyframes fade-in {
+                        100% {
+                            opacity: 1;
+                            filter: blur(0);
+                        }
+                    }
+
+                }
+
+            }
+
+            .banner-img {
+                border: 1px solid red;
+                position: absolute;
+                right: 0px;
+
+                img {
+
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+    }
+}
+
+
+.about-us-link {
+    padding: 50px 10px 20px 10px;
+
+    h4 {
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .about-contant {
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .btn-readmore {
+        width: 150px;
+        height: 50px;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;
+        transition: width 2s;
+        box-shadow: 5px 5px 10px #888888;
+        border: 1px solid rgb(224, 222, 222);
+
+        &:hover {
+            width: 190px;
+            background-image: linear-gradient(to right, #aee468, #93f106);
+        }
+    }
+}
+
+.Scheduled-info {
+    padding-top: 50px;
+
+    .Scheduled-info-cards {
+        .Scheduled-info-carousel {
+            .item {
+                .product {
+                    width: 310px;
+                    padding: 15px;
+                    border: solid 1px #ccc;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    height: 400px;
+                    @include breakpoint(xs) {
+                       width: 100%;
+                    }
+                    h4 {
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                        color: rgb(168, 5, 5);
+                    }
+
+                    .btn-contact-us {
+                        width: 150px;
+                        height: 50px;
+                        border-radius: 25px;
+                        transition: width 2s;
+                        color: black;
+                        background-color: #558e0a;
+                        padding: 10px 15px;
+                        font-weight: 900;
+                    }
+
+                    .product-text {
+                        float: left;
+                        display: none;
+                        margin-bottom: 20px;
+                        font-weight: 900;
+                        line-height: 40px;
+                        color: black;
+                        padding: 10PX;
+                    }
+
+                }
+
+                .product:hover .product-text {
+                    display: block;
+                    color: white;
+                    background-color: black;
+                }
+
+                .cardone,
+                .cartwo,
+                .cardthree {
+                    background-position: top;
+                    background-size: cover;
+                    @include breakpoint(xs) {
+                        width: 100%;
+                     }
+                }
+
+                .cardone {
+                    background-image: url(../assets/images/bus.jpg);
+
+
+                }
+
+                // .cardone .after {
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     display: none;
+                //     color: #FFF;
+                // }
+                // .cardone:hover .after {
+                //     display: block;
+                //     background: rgba(0, 0, 0, .6);
+                // }
+                .cardtwo {
+                    background-image: url(../assets/images/bharatbenz-staff-bus.jpg);
+
+                }
+
+                .cardthree {
+                    background-image: url(../assets/images/yellowtaxi.jpg);
+
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 50px;
+    padding: 50px 0px 0px 0px;
+    background-color: black;
+    color: white;
+
+    .inner-footer {
+        .top-footer-links {
+            margin-bottom: 10px;
+
+            ul {
+                justify-content: space-between;
+                align-items: center;
+                @include breakpoint(sm) {
+                    flex-direction: column;
+                 }
+                li {
+
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 10px;
+                        @include breakpoint(sm) {
+                          margin-bottom: 30px;
+                         }
+                    }
+                }
+
+            }
+        }
+
+        .bottom-footer-links {
+            padding-top: 40px;
+            border-top: 1px solid gray;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+
+}
+
+@include breakpoint(md) {
+    .header-for-mobile {
+        display: block;
+        z-index: 1;
+        background-color: black;
+        position: static;
+        right: 0px;
+        left: 0px;
+        height: 100vh;
+        padding: 2rem;
+    }
+
+    .header-for-mobile button {
+        width: 150px;
+        height: 28px;
+        margin-top: 30px;
+        background-color: white;
+        color: black;
+    }
+
+    .header-for-mobile li {
+        margin-top: 20px;
+    }
+
+    .header-for-mobile li a {
+        margin-top: 15px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .bars {
+        display: block;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .nav-list li {
+        display: none;
+    }
+
+}
+
+.login-wrap{
+    position:absolute;
+    left:50%;
+    margin-left:-33px;
+    top:50%;
+    margin-top:-30px;
+  }
+  .login-form{
+    position:absolute;
+    top:1%;
+    left:50%;
+    margin-left:-225px;
+    width:450px;
+    visibility:hidden;
+    opacity: 0;
+  }
+  .login-form:target{
+    top:20%;
+    visibility: visible;
+    opacity: 1;
+    transition:all 1s ease;
+  }
+//   .header-for-mobile-app{
+//     ul{
+//         li{
+//             display: block;
+//         }
+//     }
+//   }

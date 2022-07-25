@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 900;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1140px;
+    width: 100%;
+
+    @include breakpoint(lg) {
+        width: 992px;
+    }
+
+    @include breakpoint(md) {
+        width: 716px;
+    }
+
+    @include breakpoint(sm) {
+        width: 100%;
+    }
+}
+
+
+.white-text {
+    color: white;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-block {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+
+}
+
+.hide {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.banner-title-warapper {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+
+    @include breakpoint(md) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 30px;
+    }
+}
+
+.subtitle {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #558e0a;
+
+    @include breakpoint(md) {
+        font-size: 25px;
+    }
+}
+
+p {
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+
+    @include breakpoint(md) {
+        font-size: 14px;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background-color: #65ac09;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: #3e6b04;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: none;
+}
+
+
+// responsive part
+.header-for-mobile-app {
+    display: none;
+}
+
+.bars {
+    display: none;
+}

@@ -1,0 +1,43 @@
+.about_tok {
+  padding-top: 60px;
+}
+.about_tok h2 {
+  margin: 30px 0px;
+  text-align: center;
+}
+.about_tok .about_info {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+.about_tok .bookin_touch {
+  margin-top: 30px;
+}
+.about_tok .bookin_touch h3 {
+  color: #558e0a;
+  font-size: 22px;
+  font-family: 400;
+}
+.about_tok .bookin_touch ul {
+  margin-top: 30px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.about_tok .bookin_touch ul li {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+.about_tok .bookin_touch ul li:hover {
+  background-color: #558e0a;
+}/*# sourceMappingURL=about_us.css.map */

@@ -1,0 +1,76 @@
+.services_info {
+    padding-top: 50px;
+    h2 {
+        color: #558e0a;
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    .bus-schedule-ser {
+     
+        .service-content {
+            font-size: 17px;
+            line-height: 30px;
+            padding: 30px;
+
+            ul {
+                li{
+                    list-style:disc;
+
+                    h4{
+                        margin: 10px 0px;
+                    }
+                }
+            }
+
+        }
+
+         .services-img {
+            width: 500px;
+            height: 500px;
+         }
+
+    }
+   
+}
+.services-accordion{
+
+    .accordion {
+        background-color:#ccc;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size:18px;
+        transition: 0.4s;
+        margin-top: 10px;
+      }
+      .active, .accordion:hover {
+        background-color:#558e0a;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      
+}

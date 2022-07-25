@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tok Tokkie Shuttles</title>
+
+    <!-- font -awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font family ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Montserrat:wght@600;800&family=Roboto:wght@100;300;400;500&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/styel.css">
+</head>
+
+<body>
+    <div class="body_inner">
+        <div class="container white-text">
+            <header>
+
+                <div class="top-navbar">
+                    <ul class="top-navbar-links display-flex">
+                        <li><i class="fa-solid fa-briefcase"></i> Professional Transport Services in Namibia |</li>
+                        <li class="timer">
+                            <i class="fa-solid fa-clock "></i>
+                            <span class="date" id="printDay"></span>
+                            <span class="date" id="printDate"></span>
+                            <span class="date" id="printTime"></span> |
+
+                        </li>
+                        <li> <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+264-61-300-743 | +264-811-275-285" class="white-text">+264-61-300-743 |
+                                +264-811-275-285</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="main-navbar">
+                    <div class="inner-navbar display-flex">
+                        <a href="" class="web-logo"><img src="./assets/images/logo__2_-removebg-preview.png"
+                                alt="logo"></a>
+                        <nav>
+                            <ul class="display-flex nav-links">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./Services.html">Services</a></li>
+                                <li><a href="./Rate & Schedules.html">Rate & Schedules</a></li>
+                                <li><a href="./about_us.html">About Us</a></li>
+                                <li class="contact-li">
+                                    <!-- <a href="" >Contact & Booking</a> -->
+                                    <div id="box">
+                                        <a href="" id="contact">Contact & Booking</a>
+
+
+                                        <form action="Success.html" onsubmit="return validateform()" novalidate>
+                                            <!-- novalidate : to disable browser validation-->
+                                            <table>
+                                                <tr>
+                                                    <td><label for="fname">First Name:</label></td>
+                                                    <td> <input type="text" id="fname" name="myname"
+                                                            onblur="validate1()"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error1"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="lname">Last Name:</label></td>
+                                                    <td>
+                                                        <input type="text" id="lname" name="myname"
+                                                            onblur="validate2()">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error2"></span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error4"></span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label for="c_pass">Email Address</label></td>
+                                                    <td> <input type="email" id="mailID" name="email" required
+                                                            onblur="validate5()"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error5"></span></td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td><label for="age">Age:</label></td>
+                                                    <td><input type="number" id="age" name="age" min="1" max="100"
+                                                            required onblur="validate6()"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error6"></span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label for="mobileno">Mobile :</label></td>
+                                                    <!-- it should contain only digits -->
+                                                    <td><input type="tel" id="mobileno" pattern="[0-9]{10}" required
+                                                            onblur="validate7()"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><span id="error7"></span></td>
+                                                </tr>
+
+                                                <td><label for="address">Address :</label></td>
+                                                <td><textarea id="address"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="address">City :</label></td>
+                                                    <td>
+                                                        <select id="city">
+                                                            <option value="navimumbai">Navi Mumbai</option>
+                                                            <option value="mumbai">Mumbai</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label>Gender :</label></td>
+                                                    <td>
+                                                        <label for="male">MALE:</label><input type="radio" id="male"
+                                                            name="gender" value="male">
+                                                        <label for="female">FEMALE:</label><input type="radio"
+                                                            id="female" name="gender" value="female">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <a href="" class="btn-register"><input type="submit"
+                                                                value="Send"></a>
+                                                        <input type="reset">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </form>
+
+
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <a href="./onlinebooking.html" class="white-text btn-ol-booking">Online Booking</a>
+                        <div class="bars">
+
+                            <i class="fa fa-bars " aria-hidden="true" onclick="toggleNavBar()"></i>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Responsive navbar start -->
+                    <div class="header-for-mobile-app sidenav" id="headerRightformobile">
+                        <ul class="nav-links">
+                            <li><a href="./home_page.html">Home</a></li>
+                            <li><a href="./Services.html">Services</a></li>
+                            <li><a href="./Rate & Schedules.html">Rate & Schedules</a></li>
+                            <li><a href="./about_us.html">About Us</a></li>
+                            <li class="contact-li">
+                                <!-- <a href="" >Contact & Booking</a> -->
+                                <a href="" id="contact">Contact & Booking</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="banner">
+                <div class="container">
+                    <div class="display-flex inner-banner">
+                        <div class="banner-content">
+                            <span class="banner-title-warapper">
+                                Welcome to
+
+                            </span>
+                            <h1 class="hide">Services </h1>
+                            <p class="banner-title ">.<span class=" services-title-animation"></span></p>
+
+
+                            <p class="bannerinfo">Tok Tokkie Shuttles Namibia offers weekly schedule
+                                <span class="display-block"> all the way to Gaborone, Botswana and from Windhoek</span>
+                            </p>
+                        </div>
+                        <!-- <div class="banner-img">
+                            <img src="./assets/images/s-truck-1.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services_info">
+        <div class="container">
+            <h2>Bus Scheduled Shuttle Services between:</h2>
+            <div class="bus-schedule-ser display-flex">
+                <div class="service-content">
+                    <ul>
+                        <li>
+                            <h4> Windhoek to Hosea Kutako International Airport and Returns</h4>
+                            <p>
+                                We have scheduled shared departures between Windhoek from Christ Church near Parliament
+                                and
+                                Hosea Kutako International Airport for N$150,00. This service is a shared service with
+                                other
+                                passengers either on a sedan or a minibus. Departures are arranged for 2 hours before
+                                every
+                                departure flights and at least an hour after arrival flights. Take note that due to some
+                                delays on arrival flights as well as clearing through immigration, luggage collection
+                                and
+                                customs, there will be some delays. We will ensure departures on the provided times but
+                                collection on another schedule is possible. Your patience is highly appreciated. Pickup
+                                and
+                                drop-off can be arranged from your residence at additional cost to connect on this
+                                service.
+                                Out-Of-Schedule option is also available at extra cost should you not wish to wait for a
+                                certain hour.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Windhoek to Gaborone and Returns</h4>
+                            <p>We have a weekly departure from Windhoek to Gaborone on Tuesdays 05h00 & Thursdays 14h00
+                                and return Gaborone to Windhoek on Wednesdays & Fridays in the mornings at 05h00.
+                                Confirmation need to be done latest by the day before departure at 17h00. No
+                                reservations of seat accepted without payment.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-accordion">
+        <div class="container">
+            <button class="accordion"> Door-to-Door Taxi Service in Windhoek</button>
+            <div class="panel">
+                <p>Exclusive transfer for either airport or to any destination around Namibia and SADC countries are
+                    possible with either our sedan or minibuses. Clients decide on departure dates and times and the
+                    stops that need to be made as well as the routes.</p>
+            </div>
+
+            <button class="accordion">Exclusive / Private Transfers around Namibia and SADC</button>
+            <div class="panel">
+                <p>Group events for schools, church, companies, funerals or any can also be arranged for around
+                    Windhoek, Namibia and SADC countries. Advance notice is required as well as a clear plan of what
+                    transport requirements are needed for the event.</p>
+            </div>
+
+            <button class="accordion">Bus rentals for group events or on daily rates</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">Accommodation and Tour Packages</button>
+            <div class="panel">
+                <p>Accommodation and tour packages can be arranged with our tourism partners in the event that such
+                    services are required for single, couples or groups excursions. If you are unsure of what you want
+                    to do and how best to enjoy our country, feel free to ask us how we best can assist you arrange
+                    something that fits your pockets.</p>
+            </div>
+            <button class="accordion">Rental Services</button>
+            <div class="panel">
+                <p>We will also be able to assist clients and passenger should they require the services of rentals for
+                    our mini-busses to whatever needs and requirements they may have. We assist you to travel around
+                    Namibia to see elephants, rhinos, cheetah, lion or the different antelopes or even Etosha National
+                    Park. Group transportation for events, holidays, conferences, etc can be arranged to any part of the
+                    country including spending time in Johannesburg, South Africa and Gaborone, Botswana.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="inner-footer">
+                <div class="top-footer-links">
+                    <ul class="display-flex">
+                        <li class="address">
+                            <p><i class="fa-solid fa-location-dot"></i>P.O. Box 86656,
+                                Eros, Windhoek ,
+                                Namibia
+                                tokkiebookings@shuttlesnamibia.com
+                            </p>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+264-61-300-743 | +264-811-275-285" class="white-text">+264-61-300-743 |
+                                +264-811-275-285</a>
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/creditcards.gif" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-footer-links">
+                    <p>© 2017 Tok Tokkie Shuttles</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
