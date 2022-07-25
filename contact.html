@@ -65,13 +65,12 @@
                         <nav>
                             <ul class="display-flex nav-links">
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./Services.html" >Services</a></li>
-                                <li><a href="./Rate & Schedules.html" >Rate & Schedules</a></li>
-                                <li><a href="./about_us.html" >About Us</a></li>
+                                <li><a href="./Services.html">Services</a></li>
+                                <li><a href="./Rate & Schedules.html">Rate & Schedules</a></li>
+                                <li><a href="./about_us.html">About Us</a></li>
                                 <li>
                                     <a href="./contact.html" >Contact & Booking</a>
-                                  
-
+                                   
                                 </li>
                             </ul>
 
@@ -92,9 +91,9 @@
                             <li><a href="./Services.html">Services</a></li>
                             <li><a href="./Rate & Schedules.html">Rate & Schedules</a></li>
                             <li><a href="./about_us.html">About Us</a></li>
-                            <li class="contact-li">
-                                <!-- <a href="" >Contact & Booking</a> -->
-                                <a href="" id="contact">Contact & Booking</a>
+                            <li >
+                                <a href="./contact.html" >Contact & Booking</a>
+                                <!-- class="contact-li"  <a href="" id="contact">Contact & Booking</a> -->
 
                             </li>
                         </ul>
@@ -111,88 +110,109 @@
                                 Welcome to
 
                             </span>
-                            <h1 class="hide">About US </h1>
-                            <!-- <p class="banner-title ">Tok <span class=" banner-title-animation"></span></p> -->
-                            <p class="banner-title"> . <span class="aboutus-title-animation"></span></p>
+                            <h1 class="hide">  Contact & Booking</h1>
+                            <p class="banner-title ">Contact <span class=" Contact-title-animation"></span></p>
+
 
                             <p class="bannerinfo">Tok Tokkie Shuttles Namibia offers weekly schedule
                                 <span class="display-block"> all the way to Gaborone, Botswana and from Windhoek</span>
                             </p>
                         </div>
-                        <!-- <div class="banner-img">
-                            <img src="./assets/images/s-truck-1.png" alt="">
-                        </div> -->
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="about_tok">
-        <div class="container ">
-                <h2 class="subtitle ">Tok Tokkie Shuttle Services</h2>
-                <p class="about_info">
-                    We are situated at Unit 5 Palnic Square, 78 Nickel Street, Prosperita, Windhoek, Namibia. The Manager and Owner is Ronald Motsang and have operated the business from the start in 2012. We have also registered the company in Botswana with effect from 03 March 2017 to ensure that we have a branch available there.
-                </p>
-
-                <p class="about_info">
-                    We currently run a fleet of two 14 seater quantum’s and three sedan vehicles. Depending on the request and demands of clients, we are able to source more vehicles from our operating partners to ensure clients request are fulfilled.
-                </p>
-
-                <p class="about_info">
-                    Tok Tokkie Shuttles Namibia offers weekly schedule all the way to Gaborone, Botswana and from Windhoek. We do pick-ups and drop-offs for crossborder only along the towns that we pass i.e. Gobabis Buitepos, Charles Hill, Kang and Jwaneng. Pick-up and drop-offs can also be arranged from Hosea Kutako International Airport.
-                </p>
-                <p class="about_info">
-                    We provide taxi, airport shuttle transfers and bus schedule shuttle services that is safe, air-conditioned with separate adjustable seats, safety belts and headrests. As part of Namibia Tourism Board requirements, drivers who wish to operate shuttle services have attended an intense first aid course and vehicles are equipped with first aid kits and fire extinguisher. For further peace of mind, all our vehicles have public passenger liability cover and public transport permits.
-                </p>
-                <p class="about_info">
-                    Collection can be arranged from home, hotels, etc with drop-off at your destinations. Advanced bookings are essential to ensure we do provide our service on time and as per the scheduled times agreed.
-                </p>
-                
-                <div class="bookin_touch">
-                    <h3>Online booking is available and you can get in touch with us via</h3>
-                    <ul class="display-flex">
-                        <li><i class="fa-solid fa-phone"></i></li>
-                        <li><i class="fa-solid fa-mobile-screen-button"></i></li>
-                        <li><i class="fa-brands fa-whatsapp"></i></li>
-                        <li><i class="fa-solid fa-envelope"></i></li>
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-brands fa-facebook-messenger"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-skype"></i></li>
-                    </ul>
+    <!-- end body inner part -->
+    
+    <section class="contact-booking">
+        <div class="container">
+          
+            <form action="#">
+              <div class="user__details">
+                <div class="input__box">
+                  <span class="details">Full Name</span>
+                  <input type="text" placeholder="E.g: John Smith" required>
                 </div>
-        </div>
-       
+                <div class="input__box">
+                  <span class="details">Username</span>
+                  <input type="text" placeholder="johnWC98" required>
+                </div>
+                <div class="input__box">
+                  <span class="details">Email</span>
+                  <input type="email" placeholder="johnsmith@hotmail.com" required>
+                </div>
+                <div class="input__box">
+                  <span class="details">Phone Number</span>
+                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required>
+                </div>
+                <div class="input__box">
+                  <span class="details">Address</span>
+                  <input type="text" placeholder="johnWC98" required>
+                </div>
+                <div class="input__box">
+                  <span class="details"> Birthday</span>
+                  <input class="" type="date" name="bday">
+                </div>
+          
+              </div>
+              <div class="gender__details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender__title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span>Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span>Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span>Prefer not to say</span>
+                  </label>
+                </div>
+              </div>
+              <div class="button">
+                <input type="submit" value="Register">
+              </div>
+            </form>
+          </div>
     </section>
     
-   
-<footer>
-    <div class="container">
-        <div class="inner-footer">
-            <div class="top-footer-links">
-                <ul class="display-flex">
-                    <li class="address">
-                        <p><i class="fa-solid fa-location-dot"></i>P.O. Box 86656,
-                            Eros, Windhoek ,
-                            Namibia 
-                        </p>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+264-61-300-743 | +264-811-275-285" class="white-text">+264-61-300-743 |
-                            +264-811-275-285</a>
-                    </li>
-                   
-                    <li>
-                        <img src="./assets/images/creditcards.gif" alt="creditcards">
-                    </li>
-               </ul>
-            </div>
-            <div class="bottom-footer-links">
-                <p>© 2017 Tok Tokkie Shuttles</p>
+
+    <footer>
+        <div class="container">
+            <div class="inner-footer">
+                <div class="top-footer-links">
+                    <ul class="display-flex">
+                        <li class="address">
+                            <p><i class="fa-solid fa-location-dot"></i>P.O. Box 86656,
+                                Eros, Windhoek ,
+                                Namibia
+                                tokkiebookings@shuttlesnamibia.com
+                            </p>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+264-61-300-743 | +264-811-275-285" class="white-text">+264-61-300-743 |
+                                +264-811-275-285</a>
+                        </li>
+
+                        <li>
+                            <img src="./assets/images/creditcards.gif" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-footer-links">
+                    <p>© 2017 Tok Tokkie Shuttles</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 

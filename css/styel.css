@@ -720,6 +720,145 @@ p {
   }
 }
 
+.contact-booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.contact-booking form {
+  background: #cec4c4;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.contact-booking form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  flex-direction: row;
+}
+.contact-booking form .user__details .input__box {
+  width: calc(50% - 20px);
+  margin-bottom: 15px;
+}
+
+/* container and form */
+/* inside the form user details */
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+  border-color: var(#9b59b6);
+}
+
+form .gender__details .gender__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender__details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.gender__details .category label {
+  display: flex;
+  align-items: center;
+}
+
+.gender__details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+}
+
+form input[type=radio] {
+  display: none;
+}
+
+/* inside the form gender details */
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+form .button input:hover {
+  background: rgb(63, 196, 6);
+}
+
+@media (max-width: 767px) {
+  .contact-booking {
+    padding: 0px;
+  }
+  form .user__details .input__box {
+    width: 100%;
+  }
+  .contact-booking form .user__details {
+    display: block;
+    flex-direction: column;
+  }
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender__details .category {
+    width: 100%;
+  }
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+  .user__details .input__box input {
+    width: 300px;
+  }
+}
 .body_inner {
   background-image: url(../assets/images/banner3.jpg);
   background-size: 100%;
@@ -985,11 +1124,12 @@ p {
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product {
   width: 310px;
   padding: 15px;
-  border: solid 1px #ccc;
+  border: none;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   height: 400px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 425px) {
   .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product {
@@ -999,17 +1139,17 @@ p {
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product h4 {
   font-size: 25px;
   margin-bottom: 20px;
-  color: rgb(168, 5, 5);
+  color: white;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product .btn-contact-us {
   width: 150px;
   height: 50px;
   border-radius: 25px;
   transition: width 2s;
-  color: black;
+  color: white;
   background-color: #558e0a;
   padding: 10px 15px;
-  font-weight: 900;
+  font-size: 13px;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product .product-text {
   float: left;
@@ -1023,7 +1163,6 @@ p {
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product:hover .product-text {
   display: block;
   color: white;
-  background-color: black;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardone,
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cartwo,
@@ -1039,13 +1178,25 @@ p {
   }
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardone {
-  background-image: url(../assets/images/bus.jpg);
+  background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/bus.jpg) center center no-repeat;
+  transition: background-color 0.5s;
+}
+.Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardone:hover {
+  background: #2a6ccf;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardtwo {
-  background-image: url(../assets/images/bharatbenz-staff-bus.jpg);
+  background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/bharatbenz-staff-bus.jpg) center center no-repeat;
+  transition: background-color 1s;
+}
+.Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardtwo:hover {
+  background: #2a6ccf;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardthree {
-  background-image: url(../assets/images/yellowtaxi.jpg);
+  background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/yellowtaxi.jpg) center center no-repeat;
+  transition: background-color 1s;
+}
+.Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardthree:hover {
+  background: #2a6ccf;
 }
 
 footer {

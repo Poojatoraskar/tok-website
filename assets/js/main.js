@@ -131,6 +131,16 @@ $(function () {
   });
 });
 
+$(function () {
+  $(".Contact-title-animation").typed({
+    strings: [" - Booking ", " - Booking "],
+    typeSpeed: 70,
+    backSpeed: 20,
+    backDelay: 1500,
+    showCursor: false,
+    loop: true
+  });
+});
 
 // card slider
 
