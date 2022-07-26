@@ -18,7 +18,7 @@ function printDate() {
   var month = date.getMonth();
   var year = date.getFullYear();
 
-  elementDate.innerHTML = day + " / " + month + " / " + year;
+  elementDate.innerHTML = day + " - " + month + " - " + year;
 }
 
 function printDay() {

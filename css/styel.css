@@ -480,10 +480,6 @@ p {
 .onlinebooking form .button input:hover {
   background: rgb(63, 196, 6);
 }
-.onlinebooking .journey {
-  height: 50px;
-  width: 300px;
-}
 
 /* inside the form gender details */
 /* submit button */
@@ -678,6 +674,8 @@ form .button input:hover {
 .body_inner header .top-navbar .top-navbar-links {
   justify-content: end;
   font-size: 13px;
+  display: flex;
+  flex-direction: row;
 }
 @media (max-width: 992px) {
   .body_inner header .top-navbar .top-navbar-links {
@@ -685,15 +683,31 @@ form .button input:hover {
     justify-content: space-between;
   }
 }
+@media (max-width: 425px) {
+  .body_inner header .top-navbar .top-navbar-links {
+    flex-direction: column-reverse;
+  }
+}
 .body_inner header .top-navbar .top-navbar-links li {
   margin-left: 15px;
+}
+@media (max-width: 425px) {
+  .body_inner header .top-navbar .top-navbar-links li {
+    margin-top: 10px;
+  }
 }
 .body_inner header .top-navbar .top-navbar-links li i {
   color: #558e0a;
 }
-.body_inner header .top-navbar .top-navbar-links li .timer span {
-  margin-left: 10px;
+.body_inner header .top-navbar .top-navbar-links li .printTime {
+  margin: 0px 10px;
   font-family: "Roboto Slab", sans-serif;
+}
+.body_inner header .top-navbar .top-navbar-links li .printDate {
+  margin: 0px 10px;
+}
+.body_inner header .top-navbar .top-navbar-links li .printDay {
+  margin: 0px 10px;
 }
 @media (max-width: 992px) {
   .body_inner header .main-navbar {

@@ -19,24 +19,41 @@
             .top-navbar-links {
                 justify-content: end;
                 font-size: 13px;
-
+                display: flex;
+                flex-direction: row;
                 @include breakpoint(md) {
                     font-size: 10px;
                     justify-content: space-between;
                 }
+                @include breakpoint(xs) {
+                  flex-direction: column-reverse;
+                 
+                }
 
                 li {
                     margin-left: 15px;
-
+                    @include breakpoint(xs) {
+                        margin-top: 10px;
+                       
+                      }
                     i {
                         color: #558e0a;
                     }
-
-                    .timer span {
-                        margin-left: 10px;
-                        font-family: "Roboto Slab", sans-serif;
-
-                    }
+                    
+        
+                        .printTime {
+                            margin: 0px 10px;
+                            font-family: "Roboto Slab", sans-serif;
+    
+                        }
+                        .printDate{
+                            margin: 0px 10px;
+                        }
+                        .printDay{
+                            margin: 0px 10px;
+                        }
+                    
+                    
                 }
             }
 
