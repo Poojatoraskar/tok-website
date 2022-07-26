@@ -47,7 +47,9 @@
                         <li class="timer">
                             <i class="fa-solid fa-clock "></i>
                             <span class="date" id="printDay"></span>
+                            <span>/</span>
                             <span class="date" id="printDate"></span>
+                            <span>/</span>
                             <span class="date" id="printTime"></span> |
 
                         </li>
@@ -58,10 +60,11 @@
 
                     </ul>
                 </div>
-                <div class="main-navbar">
-                    <div class="inner-navbar display-flex">
+                <div class="main-navbar ">
+                   
+                    <div class="inner-navbar display-flex container">
                         <a href="./index.html" class="web-logo"><img src="./assets/images/logo__2_-removebg-preview.png"
-                                alt="logo"></a>
+                                alt="logo" class="web-logo-img"></a>
                         <nav>
                             <ul class="display-flex nav-links">
                                 <li><a href="./index.html">Home</a></li>
@@ -70,15 +73,13 @@
                                 <li><a href="./about_us.html">About Us</a></li>
                                 <li>
                                     <a href="./contact.html" >Contact & Booking</a>
-                                    
-
+                                   
                                 </li>
+                                
                             </ul>
 
                         </nav>
-                        <a href="./onlinebooking.html" class="white-text btn-ol-booking">
-                            Online Booking
-                        </a>
+                        <a href="./onlinebooking.html" class="white-text btn-ol-booking">Online Booking</a>
                         <div class="bars">
 
                             <i class="fa fa-bars " aria-hidden="true" onclick="toggleNavBar()"></i>
@@ -105,6 +106,9 @@
 
             </header>
 
+
+
+            <div class="innerpages-banner">
             <div class="banner">
                 <div class="container">
                     <div class="display-flex inner-banner">
@@ -125,137 +129,85 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </div>
 
   
 <section class="onlinebooking">
     <div class="container">
-        <div class="inner-booking">
+        <form action="#">
+            <div class="user__details">
+                <div class="input__box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="E.g: John Smith" required>
+                </div>
+                <div class="input__box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="johnWC98" required>
+                </div>
+                <div class="input__box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="johnsmith@hotmail.com" required>
+                </div>
+                <div class="input__box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" pattern="[789][0-9]{9}" placeholder="012-345-6789" required>
+                </div>
+                <div class="input__box">
+                    <span class="details">Pickup Address</span>
+                    <input type="text" placeholder="johnWC98" required>
+                </div>
+                <div class="input__box">
+                    <span class="details">Destination Address</span>
+                    <input type="text" placeholder="johnWC98" required>
+                </div>
 
-			<h2>To reserve the ride, please complete and submit the booking form.</h2>
+              
+                <div class="input__box">
+                    <span class="details"> Departure  Date/Time</span>
+                    <input class="" type="date" name="bday">
+                </div>
+                <div class="input__box">
+                    <span class="details"> Return Date/Time</span>
+                    <input class="" type="date" name="bday">
+                </div>
+                <div class="input__box">
+                    <span class="details">Journey Type</span>
+                    <select name="journey">
+                       
+                        <option value="single">Single</option>
+                        <option value="two way">Two Way</option>
+                    </select>
+                </div>
+            </div>
 
-			<div class="layouts-contact">
-				<form action="#" method="post">
-
-					<div class="cutomer-name commen-padding">
-						<div class="name-lable ">
-							<label>Name</label>
-						</div>
-						<div class="ename-input onlinebook-input">
-							<input class="top" type="text" name="Name" placeholder="Name" required="">
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="emailinfo commen-padding">
-						<div class="emailinfo-lable ">
-							<label>Email</label>
-						</div>
-						<div class="emailinfo-input onlinebook-input">
-							<input class="top" type="email" name="Email" placeholder="Email" required="">
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="phone-info commen-padding">
-						<div class="phone-lable ">
-							<label>Phone</label>
-						</div>
-						<div class="phone-input onlinebook-input">
-							<label>Area Code</label>
-							<input class="agilecode" type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" name="Area Code" required="">
-							<label class="aitsnumber">Number</label>
-							<input class="wthreeland" type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" name="Number" required="">
-							<br>
-							<h3>Or</h3>
-							<label>Mobile Number</label>
-							<input class="agileinfomobile" type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" name="Mobile Number" required="">
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="agileinfodeparture commen-padding">
-						<div class="agileinfodeparture-lable ">
-							<span class="lable">
-								<label>Departure</label>
-								<label>Date/Time</label>
-							</span>
-							
-						</div>
-						<div class="agileinfodeparture-input onlinebook-input">
-							<input class="date agileits w3layouts hasDatepicker" id="datepicker1" type="text" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="agileinforeturn commen-padding">
-						<div class="agileinforeturn-lable ">
-							<span class="aitsreturn-lable">
-								<label>Return</label>
-								<label>Date/Time</label>
-							</span>
-							
-						</div>
-						<div class="agileinforeturn-input onlinebook-input">
-							<input class="date agileits w3layouts hasDatepicker" id="datepicker2" type="text" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="aitspickupaddress commen-padding">
-						<div class="aitspickupaddress-lable ">
-							<span class="agilepickup-lable">
-								<label>Pickup</label>
-								<label>Address</label>
-							</span>
-							
-						</div>
-						<div class="aitspickupaddress-input onlinebook-input">
-							<textarea name="Pickup Address" placeholder="Pickup Address" required=""></textarea>
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="aitsdestinationaddress commen-padding">
-						<div class="aitsdestinationaddress-lable ">
-							<span class="agiledest-lable">
-								<label>Destination</label>
-								<label>Address</label>
-							</span>
-							
-						</div>
-						<div class="aitsdestinationaddress-input  onlinebook-input">
-							<textarea name="Destination Address" placeholder="Destination Address" required=""></textarea>
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="w3lsjourneyaits  ">
-						<div class="w3lsjourneyaits-lable ">
-							<span class="aitsjourney-lable">
-								<label>Journey</label>
-								<label>Type</label>
-							</span>
-							
-						</div>
-						<div class="w3lsjourneyaits-input onlinebook-input">
-							<select name="journey">
-								<option value="single">Single</option>
-								<option value="two way">Two Way</option>
-							</select>
-						</div>
-						<div class="clear"></div>
-					</div>
-
-					<div class="aitssubmitw3ls">
-						<input type="submit" name="submit" value="SUBMIT">
-					</div>
-
-				</form>
-			</div>
-
-		</div>
+            <div class="gender__details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender__title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span>Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span>Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span>Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <!-- <input type="submit" value=" Book"> -->
+                <a href="" class="btn-conf">Confirm booking</a>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
     </div>
 </section>
 
@@ -289,8 +241,8 @@
                                 +264-811-275-285</a>
                         </li>
 
-                        <li>
-                            <img src="./assets/images/creditcards.gif" alt="creditcards">
+                        <li class="creditcards">
+                            <img src="./assets/images/creditcards.gif" alt="creditcards" class="creditcards_img">
                         </li>
                     </ul>
                 </div>

@@ -35,60 +35,59 @@
    
 }
 .winshoek_slider{
-    padding-top: 50px;
-}
-.windhoek_title{
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 32px;
-    color: #558e0a;
-
-}
-.windhoek-carousel{
-    margin:50px auto;
-    padding: 30px;
-}
-.windhoek-carousel .item {
-    height: 150px;
-    color: white;
-    text-align: center;
-    border: 1px solid rgb(214, 209, 209);
-    border-radius:15px;
-}
-
-.windhoek_num{
-    font-size:30px;
-    font-family: "Roboto Slab", sans-serif;
-    height:85px;
-    /* background-color:; */
-    background-image: linear-gradient(to right, #52525b, #36363b);
-    line-height:85px;
-    border-radius:15px 15px 0px 0px;
-    font-weight: 300;
-}
-.windhoek_info{
-    font-size: 16px;
-    font-family: "Varela Round", sans-serif;
-    height:65px;
-    line-height:75px;
-    background-color:#558d0a;
-    border-radius:0px 0px 15px 15px;
-    font-weight: 400;
-}
-
-.gaborone-carousel{
-    margin:50px auto;
-    padding: 30px;
-}
-.gaborone_title{
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 32px;
-    color: #558e0a;
-
-}
-.gaborone-carousel .item{
-    height: 150px;
-    color: white;
-    text-align: center;
-    border: 1px solid rgb(214, 209, 209);
-    border-radius:15px;
+    padding-top: 20px;
+    .windhoek_title{
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 32px;
+        color: #558e0a;
+    
+    }
+    .windhoek-carousel{
+        margin:20px auto;
+        padding: 20px;
+    }
+    .windhoek-carousel .item {
+        height: 150px;
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(214, 209, 209);
+        border-radius:15px;
+    }
+    
+    .windhoek_num{
+        font-size:30px;
+        font-family: "Roboto Slab", sans-serif;
+        height:85px;
+        background-image: linear-gradient(to right, #52525b, #36363b);
+        line-height:85px;
+        border-radius:15px 15px 0px 0px;
+        font-weight: 300;
+    }
+    .windhoek_info{
+        font-size: 16px;
+        font-family: "Varela Round", sans-serif;
+        height:65px;
+        line-height:75px;
+        background-color:#558d0a;
+        border-radius:0px 0px 15px 15px;
+        font-weight: 400;
+    }
+    
+    .gaborone-carousel{
+        margin:20px auto;
+        padding: 20px;
+    }
+    .gaborone_title{
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 32px;
+        color: #558e0a;
+    
+    }
+    .gaborone-carousel .item{
+        height: 150px;
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(214, 209, 209);
+        border-radius:15px;
+    }
 }

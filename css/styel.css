@@ -27,10 +27,6 @@ body {
   font-weight: normal;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -97,9 +93,9 @@ li {
     font-size: 45px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 425px) {
   .banner-title-warapper {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -123,6 +119,11 @@ p {
 @media (max-width: 992px) {
   p {
     font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  p {
+    font-size: 10px;
   }
 }
 
@@ -152,19 +153,40 @@ p {
   display: none;
 }
 
+.innerpages-banner .banner {
+  position: relative;
+  padding: 130px 0px 110px 0px;
+}
+@media (max-width: 992px) {
+  .innerpages-banner .banner {
+    padding: 120px 0px 120px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .innerpages-banner .banner {
+    padding: 80px 0px 50px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .innerpages-banner .banner {
+    padding: 10px 0px 10px 0px;
+  }
+}
+
 .about_tok {
   padding-top: 60px;
 }
 .about_tok h2 {
   margin: 30px 0px;
-  text-align: center;
+  text-align: left;
 }
 .about_tok .about_info {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 40px;
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 22px;
+  padding: 10px;
 }
 .about_tok .bookin_touch {
   margin-top: 30px;
@@ -191,6 +213,10 @@ p {
   justify-content: center;
   align-content: center;
   display: flex;
+}
+.about_tok .bookin_touch ul li a i {
+  font-size: 25px;
+  color: white;
 }
 .about_tok .bookin_touch ul li:hover {
   background-color: #558e0a;
@@ -222,7 +248,7 @@ p {
 
 .services-accordion .accordion {
   background-color: #ccc;
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -231,20 +257,22 @@ p {
   outline: none;
   font-size: 18px;
   transition: 0.4s;
-  margin-top: 10px;
+  margin: 15px 0px;
 }
 .services-accordion .active, .services-accordion .accordion:hover {
   background-color: #558e0a;
+  color: black;
 }
 .services-accordion .accordion:after {
   content: "+";
-  color: #777;
+  color: black;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 .services-accordion .active:after {
   content: "−";
+  color: black;
 }
 .services-accordion .panel {
   padding: 0 18px;
@@ -288,40 +316,34 @@ p {
 }
 
 .winshoek_slider {
-  padding-top: 50px;
+  padding-top: 20px;
 }
-
-.windhoek_title {
+.winshoek_slider .windhoek_title {
   font-family: "Roboto Slab", sans-serif;
   font-size: 32px;
   color: #558e0a;
 }
-
-.windhoek-carousel {
-  margin: 50px auto;
-  padding: 30px;
+.winshoek_slider .windhoek-carousel {
+  margin: 20px auto;
+  padding: 20px;
 }
-
-.windhoek-carousel .item {
+.winshoek_slider .windhoek-carousel .item {
   height: 150px;
   color: white;
   text-align: center;
   border: 1px solid rgb(214, 209, 209);
   border-radius: 15px;
 }
-
-.windhoek_num {
+.winshoek_slider .windhoek_num {
   font-size: 30px;
   font-family: "Roboto Slab", sans-serif;
   height: 85px;
-  /* background-color:; */
   background-image: linear-gradient(to right, #52525b, #36363b);
   line-height: 85px;
   border-radius: 15px 15px 0px 0px;
   font-weight: 300;
 }
-
-.windhoek_info {
+.winshoek_slider .windhoek_info {
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
   height: 65px;
@@ -330,19 +352,16 @@ p {
   border-radius: 0px 0px 15px 15px;
   font-weight: 400;
 }
-
-.gaborone-carousel {
-  margin: 50px auto;
-  padding: 30px;
+.winshoek_slider .gaborone-carousel {
+  margin: 20px auto;
+  padding: 20px;
 }
-
-.gaborone_title {
+.winshoek_slider .gaborone_title {
   font-family: "Roboto Slab", sans-serif;
   font-size: 32px;
   color: #558e0a;
 }
-
-.gaborone-carousel .item {
+.winshoek_slider .gaborone-carousel .item {
   height: 150px;
   color: white;
   text-align: center;
@@ -351,375 +370,149 @@ p {
 }
 
 .onlinebooking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 50px;
-  color: white;
 }
-.onlinebooking .clear {
-  clear: both;
+.onlinebooking form {
+  background: #cec4c4;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-.onlinebooking input[type=submit] {
-  transition: 0.5s all;
+.onlinebooking form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  flex-direction: row;
 }
-.onlinebooking .inner-booking {
-  width: 60%;
-  margin: 0 auto;
-  text-align: left;
-  padding: 50px;
-  background-color: rgba(14, 9, 9, 0.8);
-}
-@media (max-width: 1200px) {
-  .onlinebooking .inner-booking {
-    width: 50%;
-  }
-}
-@media (max-width: 992px) {
-  .onlinebooking .inner-booking {
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .onlinebooking .inner-booking {
-    width: 100%;
-  }
-}
-@media (max-width: 425px) {
-  .onlinebooking .inner-booking {
-    width: 100%;
-  }
-}
-.onlinebooking h2 {
-  font-size: 25px;
-  padding-bottom: 15px;
-  text-align: center;
-  border-bottom: 1px solid #EEE;
-  margin-bottom: 20px;
-  color: #99ec2b;
-  font-weight: 300;
-}
-.onlinebooking .commen-padding {
-  padding: 15px 0;
-}
-.onlinebooking .wthreelable {
-  width: 30%;
-  color: white;
-  float: left;
-}
-.onlinebooking .onlinebook-input {
-  width: 70%;
-  float: left;
-}
-@media (max-width: 992px) {
-  .onlinebooking .onlinebook-input {
-    width: 65%;
-  }
-}
-@media (max-width: 767px) {
-  .onlinebooking .onlinebook-input {
-    width: 100%;
-  }
-}
-.onlinebooking span.aitsreturn-lable,
-.onlinebooking span.agilepickup-lable,
-.onlinebooking span.agiledest-lable,
-.onlinebooking span.aitsjourney-lable {
-  float: left;
-  color: white;
-}
-.onlinebooking .colon {
-  float: right;
-  margin-right: 15px;
-  font-weight: bold;
-}
-.onlinebooking input[type=text],
-.onlinebooking input[type=email],
-.onlinebooking textarea {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: #FFF;
-  border-bottom: 1px solid #FFF;
-  letter-spacing: 0.5px;
-}
-.onlinebooking input.top,
-.onlinebooking textarea {
-  padding-top: 0;
-  margin-top: 0;
-}
-.onlinebooking input.top {
+.onlinebooking form .user__details .input__box {
+  width: calc(50% - 20px);
   margin-bottom: 15px;
 }
-.onlinebooking .onlinebook-input label {
-  font-size: 12px;
-  margin-right: 5px;
+.onlinebooking .user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
 }
-.onlinebooking label.aitsnumber {
-  margin: 0 5px 0 10px;
-}
-.onlinebooking span.lable {
-  margin: 0;
-  float: left;
-}
-.onlinebooking input.agilecode,
-.onlinebooking input.wthreeland,
-.onlinebooking input.agileinfomobile,
-.onlinebooking input.date,
-.onlinebooking .w3lsjourneyaits-input select {
-  width: 15%;
-  padding: 10px;
-  margin: 5px 0;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid #EEE;
+.onlinebooking .user__details .input__box input {
+  height: 45px;
+  width: 300px;
   outline: none;
-  background: transparent;
-  color: #FFF;
-  text-align: center;
-}
-.onlinebooking input.wthreeland,
-.onlinebooking input.agileinfomobile,
-.onlinebooking .w3lsjourneyaits-input select {
-  width: 42%;
-  margin-left: 10px;
-}
-.onlinebooking .phone-input h3 {
-  text-align: center;
-  margin: 10px 0;
+  padding-left: 15px;
   font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
 }
-.onlinebooking input.date {
-  width: 62%;
-  margin-left: 10px;
+.onlinebooking .user__details .input__box input:focus,
+.onlinebooking .user__details .input__box input:valid {
+  border-color: var(#9b59b6);
 }
-.onlinebooking .date {
-  cursor: pointer;
-  padding: 8px 0;
+.onlinebooking form .gender__details .gender__title {
+  font-size: 20px;
+  font-weight: 500;
 }
-.onlinebooking textarea {
-  height: 100px;
-  padding: 5px 0 10px;
+.onlinebooking form .gender__details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: flex-start;
 }
-.onlinebooking .w3lsjourneyaits-input option {
-  background-color: #333;
+.onlinebooking .gender__details .category label {
+  display: flex;
+  align-items: center;
 }
-.onlinebooking .aitspickupaddress,
-.onlinebooking .aitsdestinationaddress {
-  padding: 20px 0;
-}
-.onlinebooking .aitspickupaddress .onlinebook-input,
-.onlinebooking .aitsdestinationaddress .onlinebook-input {
-  margin-top: -3px;
-  padding-left: 10px;
-}
-.onlinebooking .aitssubmitw3ls {
-  margin-top: 20px;
-  text-align: center;
-}
-.onlinebooking .aitssubmitw3ls input[type=submit] {
-  padding: 15px 50px;
-  border: 2px solid #EEE;
-  outline: none;
-  background: transparent;
-  color: #FFF;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-}
-.onlinebooking .aitssubmitw3ls input[type=submit]:hover {
-  background-color: #FFF;
-  color: #000;
-  border-color: #FFF;
-}
-@media (max-width: 992px) {
-  .onlinebooking input.wthreeland {
-    width: 40.8%;
-  }
-  .onlinebooking .wthreelable label {
-    font-size: 14px;
-  }
-  .onlinebooking input.wthreeland {
-    width: 41%;
-  }
-  .onlinebooking input.wthreeland {
-    width: 37.8%;
-  }
-  .onlinebooking span.lable {
-    margin-top: -14px;
-  }
-  .onlinebooking .agileinfodeparture-lable span.lable {
-    margin-top: -14px;
-    margin-right: 20px;
-    line-height: 25px;
-  }
-  .onlinebooking .agileinfodeparture-lable span.colon {
-    margin-top: -35px;
-  }
-  .onlinebooking input.wthreeland {
-    width: 35.2%;
-  }
-  .onlinebooking .aitsdestinationaddress-lable span.agiledest-lable {
-    margin-top: 0;
-  }
-  .onlinebooking span.agiledest-lable label {
-    margin-right: 15px;
-    line-height: 25px;
-  }
-  .onlinebooking .aitsdestinationaddress-lable span.colon {
-    margin-top: -50px;
-  }
-}
-@media (max-width: 767px) {
-  .onlinebooking input.wthreeland {
-    width: 31.8%;
-  }
-  .onlinebooking .agileinforeturn-lable span.aitsreturn-lable {
-    margin-top: -13px;
-  }
-  .onlinebooking .agileinforeturn-lable span.aitsreturn-lable label {
-    margin-right: 12px;
-    line-height: 25px;
-  }
-  .onlinebooking .agileinforeturn-lable span.colon {
-    margin-top: -35px;
-  }
-  .onlinebooking .containerw3layouts-agileits {
-    width: 75%;
-  }
-  .onlinebooking .agileinforeturn-lable span.aitsreturn-lable label {
-    margin-right: 22px;
-  }
-  .onlinebooking input.wthreeland {
-    width: 36.9%;
-  }
-  .onlinebooking .aitssubmitw3ls input[type=submit] {
-    padding: 10px 40px;
-    font-size: 14px;
-  }
-  .onlinebooking h2 {
-    font-size: 14px;
-  }
-  .onlinebooking label.aitsnumber {
-    margin: 0 5px 0 8px;
-  }
-  .onlinebooking input.wthreeland {
-    width: 30%;
-  }
-  .onlinebooking .containerw3layouts-agileits {
-    width: 76%;
-    padding: 40px;
-  }
-  .onlinebooking input.agilecode,
-.onlinebooking input.wthreeland,
-.onlinebooking input.agileinfomobile {
-    padding: 10px 8px;
-  }
-  .onlinebooking label.aitsnumber {
-    margin: 0 0 0 5px;
-  }
-  .onlinebooking .aitspickupaddress-lable span.agilepickup-lable {
-    margin-top: 0;
-  }
-  .onlinebooking span.agilepickup-lable label {
-    margin-right: 5px;
-    margin-top: 0;
-    line-height: 25px;
-  }
-  .onlinebooking .aitspickupaddress-lable span.colon {
-    margin-top: -50px;
-  }
-  .onlinebooking .onlinebook-input label {
-    margin-right: 4px;
-  }
-  .onlinebooking input.wthreeland {
-    width: 28.7%;
-  }
+.onlinebooking .gender__details .category label span {
+  font-size: 15px;
 }
 @media (max-width: 425px) {
-  .onlinebooking .containerw3layouts-agileits {
-    width: 80%;
-    padding: 30px;
-  }
-  .onlinebooking .onlinebook-input label {
-    margin-right: 0;
-  }
-  .onlinebooking input.date {
-    width: 70%;
-  }
-  .onlinebooking .w3lsjourneyaits-input select {
-    width: 50%;
-    margin-top: 10px;
-  }
-  .onlinebooking .onlinebook-input label {
-    margin-right: 10px;
-  }
-  .onlinebooking input.agilecode,
-.onlinebooking input.wthreeland {
-    width: 67%;
-  }
-  .onlinebooking input.agileinfomobile {
-    width: 56%;
-  }
-  .onlinebooking label.aitsnumber {
-    margin: 0 23px 0 0;
-  }
-  .onlinebooking input.agilecode,
-.onlinebooking input.wthreeland {
-    width: 63.2%;
-  }
-  .onlinebooking input.agileinfomobile {
-    width: 50.9%;
-  }
-  .onlinebooking input.date {
-    width: 91.5%;
-  }
-  .onlinebooking .w3lsjourneyaits-lable span.aitsjourney-lable {
-    margin-top: -14px;
-  }
-  .onlinebooking .w3lsjourneyaits-lable span.colon {
-    margin-top: -37px;
-  }
-  .onlinebooking span.aitsjourney-lable label {
-    line-height: 25px;
-    margin-right: 15px;
-  }
-  .onlinebooking .aitssubmitw3ls input[type=submit] {
-    padding: 7px 30px;
-  }
-  .onlinebooking .containerw3layouts-agileits {
-    width: 90%;
-    padding: 30px 10px;
-  }
-  .onlinebooking .wthreelable label {
-    font-size: 13px;
-  }
-  .onlinebooking input.agilecode,
-.onlinebooking input.wthreeland {
-    width: 92%;
-    margin: 10px 0 15px;
-  }
-  .onlinebooking input.agileinfomobile {
-    width: 92%;
-  }
-  .onlinebooking .w3lsjourneyaits-input select {
-    width: 75%;
+  .onlinebooking .gender__details .category label span {
+    font-size: 10px;
   }
 }
-@media (max-width: 375px) {
-  .onlinebooking h2 {
-    font-size: 13px;
-  }
-  .onlinebooking .emailinfo .onlinebook-input {
-    margin-top: 0;
-  }
-  .onlinebooking .agileinfodeparture-lable span.colon,
-.onlinebooking .agileinforeturn-lable span.colon,
-.onlinebooking .aitspickupaddress-lable span.colon,
-.onlinebooking .aitsdestinationaddress-lable span.colon {
-    margin-right: 10px;
-  }
+.onlinebooking .gender__details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+.onlinebooking #dot-1:checked ~ .category .one,
+.onlinebooking #dot-2:checked ~ .category .two,
+.onlinebooking #dot-3:checked ~ .category .three {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+  font-size: 13px;
+}
+.onlinebooking form input[type=radio] {
+  display: none;
+}
+.onlinebooking form .button {
+  height: 45px;
+}
+.onlinebooking form .button .btn-conf {
+  height: 40px;
+  width: 140px;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: black;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+.onlinebooking form .button a:hover {
+  background: rgb(63, 196, 6);
+}
+.onlinebooking form .button input {
+  width: 80px;
+  height: 30px;
+  padding: 5px 8px;
+  margin-left: 20px;
+  border: none;
+}
+.onlinebooking form .button input:hover {
+  background: rgb(63, 196, 6);
+}
+.onlinebooking .journey {
+  height: 50px;
+  width: 300px;
 }
 
+/* inside the form gender details */
+/* submit button */
+@media (max-width: 767px) {
+  .onlinebooking {
+    padding: 0px;
+  }
+  .onlinebooking form .user__details {
+    display: block;
+    flex-direction: column;
+  }
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender__details .category {
+    width: 100%;
+  }
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+  .user__details .input__box input {
+    width: 300px;
+  }
+}
 .contact-booking {
   display: flex;
   justify-content: center;
@@ -744,8 +537,6 @@ p {
   margin-bottom: 15px;
 }
 
-/* container and form */
-/* inside the form user details */
 .user__details .input__box .details {
   font-weight: 500;
   margin-bottom: 5px;
@@ -754,12 +545,11 @@ p {
 
 .user__details .input__box input {
   height: 45px;
-  width: 100%;
+  width: 80%;
   outline: none;
-  border-radius: 5px;
   padding-left: 15px;
   font-size: 16px;
-  border-bottom-width: 2px;
+  border: none;
   transition: all 0.3s ease;
 }
 
@@ -777,7 +567,7 @@ form .gender__details .category {
   display: flex;
   width: 80%;
   margin: 15px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .gender__details .category label {
@@ -810,12 +600,11 @@ form input[type=radio] {
 /* submit button */
 form .button {
   height: 45px;
-  margin: 45px 0;
 }
 
-form .button input {
-  height: 100%;
-  width: 100%;
+form .button .btn-conf {
+  height: 40px;
+  width: 140px;
   outline: none;
   color: #fff;
   border: none;
@@ -824,6 +613,19 @@ form .button input {
   border-radius: 5px;
   background-color: black;
   transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+
+form .button a:hover {
+  background: rgb(63, 196, 6);
+}
+
+form .button input {
+  width: 80px;
+  height: 30px;
+  padding: 5px 8px;
+  margin-left: 20px;
+  border: none;
 }
 
 form .button input:hover {
@@ -862,6 +664,8 @@ form .button input:hover {
 .body_inner {
   background-image: url(../assets/images/banner3.jpg);
   background-size: 100%;
+  background-repeat: repeat;
+  background-position: center center;
 }
 .body_inner header .top-navbar {
   padding: 18px;
@@ -882,10 +686,10 @@ form .button input:hover {
   }
 }
 .body_inner header .top-navbar .top-navbar-links li {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .body_inner header .top-navbar .top-navbar-links li i {
-  color: #0090ff;
+  color: #558e0a;
 }
 .body_inner header .top-navbar .top-navbar-links li .timer span {
   margin-left: 10px;
@@ -893,104 +697,48 @@ form .button input:hover {
 }
 @media (max-width: 992px) {
   .body_inner header .main-navbar {
-    padding: 20px 10px;
+    padding: 5px 10px;
   }
 }
 .body_inner header .main-navbar .inner-navbar {
   align-items: center;
   justify-content: space-between;
 }
-.body_inner header .main-navbar .inner-navbar .web-logo img {
+.body_inner header .main-navbar .inner-navbar .web-logo .web-logo-img {
   width: 250px;
   height: 60px;
 }
 @media (max-width: 992px) {
-  .body_inner header .main-navbar .inner-navbar .web-logo img {
+  .body_inner header .main-navbar .inner-navbar .web-logo .web-logo-img {
     align-self: flex-start;
   }
 }
+@media (max-width: 767px) {
+  .body_inner header .main-navbar .inner-navbar .web-logo .web-logo-img {
+    width: 180px;
+    height: 40px;
+  }
+}
 @media (max-width: 992px) {
-  .body_inner header .main-navbar .inner-navbar nav {
+  .body_inner header .main-navbar .inner-navbar .nav-links {
     display: none;
   }
 }
-.body_inner header .main-navbar .inner-navbar nav .nav-links li {
-  margin-left: 10px;
+.body_inner header .main-navbar .inner-navbar .nav-links li {
+  margin-left: 5px;
 }
-.body_inner header .main-navbar .inner-navbar nav .nav-links li a {
+.body_inner header .main-navbar .inner-navbar .nav-links li a {
   font-size: 16px;
-  padding: 10px;
+  padding: 8px;
   color: white;
 }
 @media (max-width: 1200px) {
-  .body_inner header .main-navbar .inner-navbar nav .nav-links li a {
+  .body_inner header .main-navbar .inner-navbar .nav-links li a {
     font-size: 14px;
   }
 }
-.body_inner header .main-navbar .inner-navbar nav .nav-links li a:hover {
+.body_inner header .main-navbar .inner-navbar .nav-links li a:hover {
   background-color: #558e0a;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li #box {
-  z-index: 10;
-  position: relative;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li #box form {
-  background: white;
-  padding: 5px;
-  display: none;
-  position: absolute;
-  top: 47px;
-  width: 500px;
-  right: 10px;
-  height: 400px;
-  border: 1px solid white;
-  color: black;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li #box form table {
-  border: none;
-  padding: 20px;
-  background: white;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li #box form table tr td {
-  border: none;
-  color: black;
-  margin-top: 10px;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li input[type=submit] {
-  background-color: #558e0a;
-  color: #fff;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  padding: 10px 15px;
-}
-.body_inner header .main-navbar .inner-navbar nav .nav-links .contact-li input[type=reset] {
-  background-color: blue;
-  color: #fff;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  padding: 10px 15px;
-}
-.body_inner header .main-navbar .inner-navbar nav.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  padding-left: 200px;
-  box-shadow: 0 8px 6px -6px black;
-  z-index: 999;
-  padding-top: 20px;
-  height: 60px;
-}
-.body_inner header .main-navbar .inner-navbar nav.fixed-header .nav-links li a {
-  color: black;
-}
-.body_inner header .main-navbar .inner-navbar nav.fixed-header::before {
-  content: "";
-  position: absolute;
-  left: 0;
 }
 .body_inner header .main-navbar .inner-navbar .btn-ol-booking {
   width: 170px;
@@ -1014,44 +762,76 @@ form .button input:hover {
 .body_inner header .main-navbar .inner-navbar .btn-ol-booking:hover {
   background-image: linear-gradient(to right, #aee468, #93f106);
 }
-.body_inner .banner {
+.body_inner header .main-navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px black;
+  z-index: 999;
+  padding: 5px 20px;
+  height: 100px;
+}
+.body_inner header .main-navbar.sticky .inner-navbar nav .nav-links li a {
+  color: black;
+  padding: 10px;
+}
+.body_inner header .main-navbar.sticky .inner-navbar nav .nav-links li a:hover {
+  color: #fff;
+}
+.body_inner header .main-navbar.sticky .inner-navbar nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.body_inner header .main-navbar.sticky .inner-navbar .bars {
+  color: black;
+}
+
+.banner {
   position: relative;
   padding: 160px 0px 150px 0px;
 }
 @media (max-width: 992px) {
-  .body_inner .banner {
+  .banner {
     padding: 120px 0px 120px 0px;
   }
 }
 @media (max-width: 767px) {
-  .body_inner .banner {
-    padding: 80px 0px 80px 0px;
+  .banner {
+    padding: 80px 0px 50px 0px;
   }
 }
-.body_inner .banner .inner-banner .banner-content {
+@media (max-width: 425px) {
+  .banner {
+    padding: 10px 0px 10px 0px;
+  }
+}
+.banner .inner-banner .banner-content {
   padding: 10px;
 }
-.body_inner .banner .inner-banner .banner-content .banner-title {
+.banner .inner-banner .banner-content .banner-title {
   font-size: 78px;
   color: #558e0a;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
 }
 @media (max-width: 992px) {
-  .body_inner .banner .inner-banner .banner-content .banner-title {
+  .banner .inner-banner .banner-content .banner-title {
     font-size: 58px;
   }
 }
-@media (max-width: 992px) {
-  .body_inner .banner .inner-banner .banner-content .banner-title {
-    font-size: 40px;
+@media (max-width: 425px) {
+  .banner .inner-banner .banner-content .banner-title {
+    font-size: 30px;
   }
 }
-.body_inner .banner .inner-banner .banner-content .banner-title .banner-title-animation {
+.banner .inner-banner .banner-content .banner-title .banner-title-animation {
   color: #8aec0a;
   margin: 20px 0px;
 }
-.body_inner .banner .inner-banner .banner-content .bannerinfo {
+.banner .inner-banner .banner-content .bannerinfo {
   color: white;
   transform: scale(0.84);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -1061,16 +841,16 @@ form .button input:hover {
     transform: scale(1);
   }
 }
-.body_inner .banner .inner-banner .banner-content .bannerinfo .bannerinfo span {
+.banner .inner-banner .banner-content .bannerinfo .bannerinfo span {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
 }
-.body_inner .banner .inner-banner .banner-content .bannerinfo .bannerinfo span:nth-child(1) {
+.banner .inner-banner .banner-content .bannerinfo .bannerinfo span:nth-child(1) {
   animation: fade-in 0.15s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
   display: block;
 }
-.body_inner .banner .inner-banner .banner-content .bannerinfo .bannerinfo span:nth-child(2) {
+.banner .inner-banner .banner-content .bannerinfo .bannerinfo span:nth-child(2) {
   animation: fade-in 2.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 @keyframes fade-in {
@@ -1078,15 +858,6 @@ form .button input:hover {
     opacity: 1;
     filter: blur(0);
   }
-}
-.body_inner .banner .inner-banner .banner-img {
-  border: 1px solid red;
-  position: absolute;
-  right: 0px;
-}
-.body_inner .banner .inner-banner .banner-img img {
-  width: 100%;
-  height: 100%;
 }
 
 .about-us-link {
@@ -1097,9 +868,13 @@ form .button input:hover {
   margin: 20px 0px;
 }
 .about-us-link .about-contant {
-  font-size: 18px;
-  text-align: center;
-  line-height: 30px;
+  font-size: 17px;
+  text-align: justify;
+}
+@media (max-width: 425px) {
+  .about-us-link .about-contant {
+    font-size: 14px;
+  }
 }
 .about-us-link .btn-readmore {
   width: 150px;
@@ -1121,8 +896,14 @@ form .button input:hover {
 .Scheduled-info {
   padding-top: 50px;
 }
+@media (max-width: 425px) {
+  .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item {
+    width: 100%;
+  }
+}
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product {
   width: 310px;
+  margin: 0px auto;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -1158,7 +939,7 @@ form .button input:hover {
   font-weight: 900;
   line-height: 40px;
   color: black;
-  padding: 10PX;
+  padding: 10px;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .product:hover .product-text {
   display: block;
@@ -1179,24 +960,24 @@ form .button input:hover {
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardone {
   background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/bus.jpg) center center no-repeat;
-  transition: background-color 0.5s;
+  transition: background-color 1.2s;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardone:hover {
-  background: #2a6ccf;
+  background: black;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardtwo {
   background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/bharatbenz-staff-bus.jpg) center center no-repeat;
   transition: background-color 1s;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardtwo:hover {
-  background: #2a6ccf;
+  background: black;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardthree {
   background: linear-gradient(rgba(63, 44, 47, 0.5), rgba(44, 33, 34, 0.5)), url(../assets/images/yellowtaxi.jpg) center center no-repeat;
   transition: background-color 1s;
 }
 .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item .cardthree:hover {
-  background: #2a6ccf;
+  background: black;
 }
 
 footer {
@@ -1227,6 +1008,9 @@ footer .inner-footer .top-footer-links ul li p {
   footer .inner-footer .top-footer-links ul li p {
     margin-bottom: 30px;
   }
+}
+footer .inner-footer .top-footer-links ul li img {
+  width: 310px;
 }
 footer .inner-footer .bottom-footer-links {
   padding-top: 40px;

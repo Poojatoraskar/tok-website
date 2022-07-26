@@ -1,3 +1,4 @@
+
 .services_info {
     padding-top: 50px;
     h2 {
@@ -37,7 +38,7 @@
 
     .accordion {
         background-color:#ccc;
-        color: #444;
+        color: black;
         cursor: pointer;
         padding: 18px;
         width: 100%;
@@ -46,15 +47,16 @@
         outline: none;
         font-size:18px;
         transition: 0.4s;
-        margin-top: 10px;
+        margin: 15px 0px;
       }
       .active, .accordion:hover {
         background-color:#558e0a;
+        color: black;
       }
       
       .accordion:after {
         content: '\002B';
-        color: #777;
+        color: black;
         font-weight: bold;
         float: right;
         margin-left: 5px;
@@ -63,6 +65,7 @@
       
       .active:after {
         content: "\2212";
+        color: black;
       }
       
       .panel {

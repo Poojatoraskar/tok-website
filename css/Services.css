@@ -25,7 +25,7 @@
 
 .services-accordion .accordion {
   background-color: #ccc;
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -34,20 +34,22 @@
   outline: none;
   font-size: 18px;
   transition: 0.4s;
-  margin-top: 10px;
+  margin: 15px 0px;
 }
 .services-accordion .active, .services-accordion .accordion:hover {
   background-color: #558e0a;
+  color: black;
 }
 .services-accordion .accordion:after {
   content: "+";
-  color: #777;
+  color: black;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 .services-accordion .active:after {
   content: "−";
+  color: black;
 }
 .services-accordion .panel {
   padding: 0 18px;

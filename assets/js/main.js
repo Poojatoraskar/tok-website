@@ -60,18 +60,35 @@ setInterval(function () {
 
 //  fix navbar
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() >= 200) {
-    $('nav').addClass('fixed-header');
-    $('nav div').addClass('visible-title');
-  }
-  else {
-    $('nav').removeClass('fixed-header');
-    $('nav div').removeClass('visible-title');
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() >= 200) {
+//     $('nav').addClass('fixed-header');
+//     $('nav div').addClass('visible-title');
+//   }
+//   else {
+//     $('nav').removeClass('fixed-header');
+//     $('nav div').removeClass('visible-title');
+//   }
+// });
+
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() >= 150) {
+//     $('.main-navbar').addClass('fixed-header');
+//     $('.main-navbar div').addClass('visible-title');
+//   }
+//   else {
+//     $('.main-navbar').removeClass('fixed-header');
+//     $('.main-navbar div').removeClass('visible-title');
+//   }
+// });
+
+$(window).scroll(function(){
+  if($(this).scrollTop() > 100){
+      $('.main-navbar').addClass('sticky')
+  } else{
+      $('.main-navbar').removeClass('sticky')
   }
 });
-
-
 
 // banner text
 

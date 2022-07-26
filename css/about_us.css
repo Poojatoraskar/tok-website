@@ -3,14 +3,15 @@
 }
 .about_tok h2 {
   margin: 30px 0px;
-  text-align: center;
+  text-align: left;
 }
 .about_tok .about_info {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 40px;
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 22px;
+  padding: 10px;
 }
 .about_tok .bookin_touch {
   margin-top: 30px;
@@ -37,6 +38,10 @@
   justify-content: center;
   align-content: center;
   display: flex;
+}
+.about_tok .bookin_touch ul li a i {
+  font-size: 25px;
+  color: white;
 }
 .about_tok .bookin_touch ul li:hover {
   background-color: #558e0a;
