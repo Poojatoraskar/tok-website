@@ -1367,6 +1367,7 @@ footer .inner-footer .bottom-footer-links p {
   font-size: 1.3rem;
   text-align: center;
   color: white;
+  line-height: 110px;
 }
 .responsive nav li a:hover,
 .responsive nav li a:active {
