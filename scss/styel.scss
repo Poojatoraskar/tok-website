@@ -184,9 +184,13 @@
                 padding: 5px 20px;
                 height: 90px;
                
-                @include breakpoint(xs) {
+                @include breakpoint(md) {
+                    padding: 5px 10px;
+                    // padding: 40px 10px 10px 10px;
+                }
+                @include breakpoint(sm) {
                     // padding: 5px 10px;
-                    padding: 40px 10px 5px 10px;
+                    padding: 40px 10px 10px 10px;
                 }
                 .inner-navbar {
                     nav {
@@ -240,10 +244,18 @@
                 }
                 .responsive .hamburger-menu{
                     top:0;
+                    @include breakpoint(md){
+                        top: 20px;
+                        right: 5px;
+                    }
+                    @include breakpoint(sm){
+                        top: 10px;
+                        right: 20px;
+                    }
                 }
                 .responsive .menu-bar1, .responsive .menu-bar2, .responsive .menu-bar3{
                     background-color: black;
-                    // margin-bottom: -10px;
+                   
                 }
 
 
@@ -672,6 +684,8 @@ footer {
     opacity: 1;
     transition: all 1s ease;
 }
+
+
 .responsive {
     .center {
         display: flex;
@@ -715,25 +729,35 @@ footer {
       }
       
       nav li:nth-of-type(1) {
-        background-color: #626059;
+       
+        background-color: #76cc07;
        
       }
       
       nav li:nth-of-type(2) {
-        background-color: #9d5543;
+       
+        background-color: #6daf16;
+       
         text-align: center;
       }
       
       nav li:nth-of-type(3) {
-        background-color: #3d405b;
+       
+        background-color: #4e8605;
+        
+
       }
       
       nav li:nth-of-type(4) {
-        background-color: #5a7d6c;
+      
+        background-color: #447406;
+       
       }
       
       nav li:nth-of-type(5) {
-        background-color: #917a56;
+       
+        background-color: #386102;
+        
       }
       
       nav li a {

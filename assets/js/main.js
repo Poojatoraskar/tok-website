@@ -1,15 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
 //    for day and date
 var date = new Date();
 const elementDate = document.getElementById("printDate");
