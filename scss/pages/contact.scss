@@ -25,6 +25,10 @@
     width: calc(100% / 2 - 20px);
     margin-bottom: 15px;
   }
+  .date{
+    color: #837c7c;
+    font-weight: 500;
+  }
 
 }
 
@@ -104,10 +108,7 @@ form .button {
   height: 45px;
 
 }
-.date{
-  color: #837c7c;
-  font-weight: 500;
-}
+
 
 
 form .button .btn-conf {

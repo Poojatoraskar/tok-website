@@ -45,7 +45,9 @@
    
 }
 .services-accordion{
-
+  @include breakpoint (sm){
+    padding: 10px;
+}
     .accordion {
         background-color:#ccc;
         color: black;
