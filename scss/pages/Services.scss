@@ -1,10 +1,17 @@
 
 .services_info {
     padding-top: 50px;
+    
+    @include breakpoint(sm){
+      padding:50px 10px 10px 10px;
+    }
     h2 {
         color: #558e0a;
         font-size: 30px;
         font-weight: 200;
+        @include breakpoint(xs){
+         font-size: 25px;
+        }
     }
 
     .bus-schedule-ser {
@@ -20,6 +27,9 @@
 
                     h4{
                         margin: 10px 0px;
+                        @include breakpoint(xs){
+                          font-size: 16px;
+                         }
                     }
                 }
             }
@@ -48,6 +58,9 @@
         font-size:18px;
         transition: 0.4s;
         margin: 15px 0px;
+        @include breakpoint(xs){
+          font-size:15px;
+         }
       }
       .active, .accordion:hover {
         background-color:#558e0a;
@@ -74,6 +87,7 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        line-height: 18px;
       }
       
 }

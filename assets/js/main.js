@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 //    for day and date
 var date = new Date();
 const elementDate = document.getElementById("printDate");
@@ -83,7 +95,7 @@ setInterval(function () {
 // });
 
 $(window).scroll(function(){
-  if($(this).scrollTop() > 100){
+  if($(this).scrollTop() > 80){
       $('.main-navbar').addClass('sticky')
   } else{
       $('.main-navbar').removeClass('sticky')
@@ -128,7 +140,7 @@ $(function () {
 
 $(function () {
   $(".rate-title-animation").typed({
-    strings: [" -Schedules.", "  -Schedules."],
+    strings: [" Rate-Schedules.", " Rate-Schedules."],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 1500,
@@ -186,15 +198,15 @@ $('.Scheduled-info-carousel').owlCarousel({
 
 
 // Responsive navbar
-function toggleNavBar() {
+// function toggleNavBar() {
 
-  console.log("hii")
-  var headerRight = document.getElementById('headerRightformobile');
+//   console.log("hii")
+//   var headerRight = document.getElementById('headerRightformobile');
 
-  console.log(headerRight.style.display, 'headerRight.style.display')
+//   console.log(headerRight.style.display, 'headerRight.style.display')
 
-  headerRight.classList.toggle("header-for-mobile");
-}
+//   headerRight.classList.toggle("header-for-mobile");
+// }
 
 
 
@@ -432,3 +444,54 @@ function validateform(){
     return(v1&&v2&&v3&&v4&&v5&&v6&&v7);
   
 }
+
+
+
+
+
+
+
+
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const overlay = document.querySelector("#overlay");
+const nav1 = document.querySelector("#nav-1");
+const nav2 = document.querySelector("#nav-2");
+const nav3 = document.querySelector("#nav-3");
+const nav4 = document.querySelector("#nav-4");
+
+const navItems = [nav1, nav2, nav3, nav4];
+
+// Control Navigation Animation
+function navAnimation(val1, val2) {
+  navItems.forEach((nav, i) => {
+    nav.classList.replace(`slide-${val1}-${i + 1}`, `slide-${val2}-${i + 1}`);
+  });
+}
+
+function toggleNav() {
+  // Toggle: Hamburger Open/Close
+  hamburgerMenu.classList.toggle("active");
+
+  //   Toggle: Menu Active
+  overlay.classList.toggle("overlay-active");
+
+  if (overlay.classList.contains("overlay-active")) {
+    // Animate In - Overlay
+    overlay.classList.replace("overlay-slide-left", "overlay-slide-right");
+
+    // Animate In - Nav Items
+    navAnimation("out", "in");
+  } else {
+    // Animate Out - Overlay
+    overlay.classList.replace("overlay-slide-right", "overlay-slide-left");
+
+    // Animate Out - Nav Items
+    navAnimation("in", "out");
+  }
+}
+
+// Events Listeners
+hamburgerMenu.addEventListener("click", toggleNav);
+navItems.forEach((nav) => {
+  nav.addEventListener("click", toggleNav);
+});

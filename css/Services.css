@@ -2,10 +2,12 @@
 .services_info {
   padding-top: 50px;
 }
-.services_info h2 {
-  color: #558e0a;
-  font-size: 30px;
-  font-weight: 200;
+@im h2 {
+  .services_info {
+    color: #558e0a;
+    font-size: 30px;
+    font-weight: 200;
+  }
 }
 .services_info .bus-schedule-ser .service-content {
   font-size: 17px;

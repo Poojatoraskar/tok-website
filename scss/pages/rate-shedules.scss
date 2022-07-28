@@ -1,7 +1,12 @@
 .rate-chart{
+    padding: 10px;
     .chargecart{
         padding-top:50px;
-    
+        overflow-x:auto;
+    }
+    table{
+        width: 100%;
+      
     }
     .chart_title{
         font-size: 30px;
@@ -9,6 +14,7 @@
         font-weight: 700;
         color: #558e0a;
         text-align: center;
+        margin-top: 20px;
     }
     .chargecart table{
         width:700px;
@@ -24,6 +30,10 @@
         font-size: 16px;
         font-weight: 400;  
         Color:#454242;
+
+        @include breakpoint(sm){
+            font-size:13px;
+        }
       }
       
     .chargecart table tr:hover {background-color: #848b8b;
@@ -40,7 +50,10 @@
         font-family: "Roboto Slab", sans-serif;
         font-size: 32px;
         color: #558e0a;
-    
+        @include breakpoint(sm){
+            font-size:23px;
+            text-align: center;
+        }
     }
     .windhoek-carousel{
         margin:20px auto;
@@ -62,6 +75,10 @@
         line-height:85px;
         border-radius:15px 15px 0px 0px;
         font-weight: 300;
+        @include breakpoint(sm){
+            font-size:20px;
+            text-align: center;
+        }
     }
     .windhoek_info{
         font-size: 16px;
@@ -81,6 +98,10 @@
         font-family: "Roboto Slab", sans-serif;
         font-size: 32px;
         color: #558e0a;
+        @include breakpoint(sm){
+            font-size:23px;
+            text-align: center;
+        }
     
     }
     .gaborone-carousel .item{

@@ -24,6 +24,7 @@ body {
     font-family: "Varela Round", sans-serif;
     font-size: 16px;
     font-weight: normal;
+    overflow: hidden;
 }
 
 // img {
@@ -86,7 +87,7 @@ li {
 .banner-title-warapper {
     font-family: "Roboto Slab", sans-serif;
     font-weight: 700;
-    font-size: 65px;
+    font-size:50px;
     color: white;
 
     @include breakpoint(md) {
@@ -94,7 +95,7 @@ li {
     }
 
     @include breakpoint(xs) {
-        font-size:25px;
+        font-size:21px;
     }
 }
 
@@ -117,8 +118,11 @@ p {
     @include breakpoint(md) {
         font-size: 14px;
     }
+    @include breakpoint(sm) {
+        font-size:12px;
+    }
     @include breakpoint(xs) {
-        font-size:10px;
+        font-size:12px;
     }
 }
 
@@ -153,10 +157,10 @@ p {
  
     .banner{
       position: relative;
-      padding: 130px 0px 110px 0px;
-  
+      padding: 80px 0px 80px 0px;
+      
       @include breakpoint(md) {
-          padding: 120px 0px 120px 0px;
+          padding: 100px 0px 100px 0px;
       }
   
       @include breakpoint(sm) {
@@ -165,5 +169,17 @@ p {
       @include breakpoint(xs) {
           padding: 10px 0px 10px 0px;
       }
+    
     }
+    // .banner-title{
+    //     letter-spacing:5px;
+    //     @include breakpoint(xxs) {
+    //        height: 50px;
+    //        border: 1px solid red;
+    //     }
+    //   }
   }
+  .bg-color{
+    background-color: #558e0a;
+  }
+ 

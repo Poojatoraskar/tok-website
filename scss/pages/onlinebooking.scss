@@ -100,36 +100,41 @@
     }
     
     form .button .btn-conf {
-        height: 40px;
-        width: 140px;
+        // height: 40px;
+        // width: 140px;
         outline: none;
         color: #fff;
         border: none;
         font-size: 18px;
         font-weight: 500;
-        border-radius: 5px;
+        border-radius:25px;
         background-color: black;
         transition: all 0.3s ease;
-        padding: 5px 10px;
+        padding: 8px 18px;
     }
     
     form .button a:hover {
         background: rgb(63, 196, 6);
     }
     form .button input{
-        width: 80px;
-        height: 30px;
-        padding: 5px 8px;
+      
+        padding: 8px 18px;
         margin-left: 20px;
         border: none;
+        @include breakpoint (xs){
+            margin-left: 5px;
+        }
+
     }
     form .button input:hover {
         background: rgb(63, 196, 6);
       }
-    //   .journey{
-    //     height: 50px;
-    //     width: 300px;
-    //   }
+      .journey{
+        width: 65%;
+        height: 40px;
+        border-radius: 10px;
+        padding: 5px;
+      }
 
 }
 

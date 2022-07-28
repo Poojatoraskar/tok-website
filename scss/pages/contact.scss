@@ -45,6 +45,8 @@
   font-size: 16px;
   border: none;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  padding-right: 5px;
 }
 
 .user__details .input__box input:focus,
@@ -67,6 +69,9 @@ form .gender__details .category {
 .gender__details .category label {
   display: flex;
   align-items: center;
+  @include breakpoint(xs){
+    font-size: 11px;
+  }
 }
 
 .gender__details .category .dot {
@@ -99,20 +104,23 @@ form .button {
   height: 45px;
 
 }
+.date{
+  color: #b4acac;
+}
 
 
 form .button .btn-conf {
-  height: 40px;
-  width: 140px;
+  // height: 40px;
+  // width: 140px;
   outline: none;
   color: #fff;
   border: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: black;
   transition: all 0.3s ease;
-  padding: 5px 10px;
+  padding: 8px 15px;
 }
 
 form .button a:hover {
@@ -120,15 +128,19 @@ form .button a:hover {
 }
 
 form .button input {
-  width: 80px;
-  height: 30px;
-  padding: 5px 8px;
+  // width: 80px;
+  // height: 30px;
+  padding: 8px 20px;
   margin-left: 20px;
   border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  background: rgb(63, 196, 6);
 }
 
 form .button input:hover {
-  background: rgb(63, 196, 6);
+  background-color: black;
+  color: white;
 }
 
 @include breakpoint(sm) {

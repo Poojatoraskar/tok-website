@@ -1,5 +1,12 @@
+.rate-chart {
+  padding: 20px;
+}
 .rate-chart .chargecart {
   padding-top: 50px;
+  overflow-x: auto;
+}
+.rate-chart table {
+  width: 100%;
 }
 .rate-chart .chart_title {
   font-size: 30px;
@@ -22,6 +29,7 @@
   font-size: 16px;
   font-weight: 400;
   Color: #454242;
+  @in;
 }
 .rate-chart .chargecart table tr:hover {
   background-color: #848b8b;

@@ -25,6 +25,7 @@ body {
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
   font-weight: normal;
+  overflow: hidden;
 }
 
 a {
@@ -85,7 +86,7 @@ li {
 .banner-title-warapper {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 50px;
   color: white;
 }
 @media (max-width: 992px) {
@@ -95,7 +96,7 @@ li {
 }
 @media (max-width: 425px) {
   .banner-title-warapper {
-    font-size: 25px;
+    font-size: 21px;
   }
 }
 
@@ -121,9 +122,14 @@ p {
     font-size: 14px;
   }
 }
+@media (max-width: 767px) {
+  p {
+    font-size: 12px;
+  }
+}
 @media (max-width: 425px) {
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -155,11 +161,11 @@ p {
 
 .innerpages-banner .banner {
   position: relative;
-  padding: 130px 0px 110px 0px;
+  padding: 80px 0px 80px 0px;
 }
 @media (max-width: 992px) {
   .innerpages-banner .banner {
-    padding: 120px 0px 120px 0px;
+    padding: 100px 0px 100px 0px;
   }
 }
 @media (max-width: 767px) {
@@ -173,8 +179,17 @@ p {
   }
 }
 
+.bg-color {
+  background-color: #558e0a;
+}
+
 .about_tok {
   padding-top: 60px;
+}
+@media (max-width: 425px) {
+  .about_tok {
+    padding: 10px;
+  }
 }
 .about_tok h2 {
   margin: 30px 0px;
@@ -195,6 +210,12 @@ p {
   color: #558e0a;
   font-size: 22px;
   font-family: 400;
+}
+@media (max-width: 425px) {
+  .about_tok .bookin_touch h3 {
+    font-size: 19px;
+    font-weight: 300;
+  }
 }
 .about_tok .bookin_touch ul {
   margin-top: 30px;
@@ -225,10 +246,20 @@ p {
 .services_info {
   padding-top: 50px;
 }
+@media (max-width: 767px) {
+  .services_info {
+    padding: 50px 10px 10px 10px;
+  }
+}
 .services_info h2 {
   color: #558e0a;
   font-size: 30px;
   font-weight: 200;
+}
+@media (max-width: 425px) {
+  .services_info h2 {
+    font-size: 25px;
+  }
 }
 .services_info .bus-schedule-ser .service-content {
   font-size: 17px;
@@ -240,6 +271,11 @@ p {
 }
 .services_info .bus-schedule-ser .service-content ul li h4 {
   margin: 10px 0px;
+}
+@media (max-width: 425px) {
+  .services_info .bus-schedule-ser .service-content ul li h4 {
+    font-size: 16px;
+  }
 }
 .services_info .bus-schedule-ser .services-img {
   width: 500px;
@@ -258,6 +294,11 @@ p {
   font-size: 18px;
   transition: 0.4s;
   margin: 15px 0px;
+}
+@media (max-width: 425px) {
+  .services-accordion .accordion {
+    font-size: 15px;
+  }
 }
 .services-accordion .active, .services-accordion .accordion:hover {
   background-color: #558e0a;
@@ -280,10 +321,18 @@ p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  line-height: 18px;
 }
 
+.rate-chart {
+  padding: 10px;
+}
 .rate-chart .chargecart {
   padding-top: 50px;
+  overflow-x: auto;
+}
+.rate-chart table {
+  width: 100%;
 }
 .rate-chart .chart_title {
   font-size: 30px;
@@ -291,6 +340,7 @@ p {
   font-weight: 700;
   color: #558e0a;
   text-align: center;
+  margin-top: 20px;
 }
 .rate-chart .chargecart table {
   width: 700px;
@@ -307,6 +357,11 @@ p {
   font-weight: 400;
   Color: #454242;
 }
+@media (max-width: 767px) {
+  .rate-chart .chargecart table th, .rate-chart td {
+    font-size: 13px;
+  }
+}
 .rate-chart .chargecart table tr:hover {
   background-color: #848b8b;
   color: white;
@@ -322,6 +377,12 @@ p {
   font-family: "Roboto Slab", sans-serif;
   font-size: 32px;
   color: #558e0a;
+}
+@media (max-width: 767px) {
+  .winshoek_slider .windhoek_title {
+    font-size: 23px;
+    text-align: center;
+  }
 }
 .winshoek_slider .windhoek-carousel {
   margin: 20px auto;
@@ -343,6 +404,12 @@ p {
   border-radius: 15px 15px 0px 0px;
   font-weight: 300;
 }
+@media (max-width: 767px) {
+  .winshoek_slider .windhoek_num {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 .winshoek_slider .windhoek_info {
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
@@ -360,6 +427,12 @@ p {
   font-family: "Roboto Slab", sans-serif;
   font-size: 32px;
   color: #558e0a;
+}
+@media (max-width: 767px) {
+  .winshoek_slider .gaborone_title {
+    font-size: 23px;
+    text-align: center;
+  }
 }
 .winshoek_slider .gaborone-carousel .item {
   height: 150px;
@@ -455,30 +528,37 @@ p {
   height: 45px;
 }
 .onlinebooking form .button .btn-conf {
-  height: 40px;
-  width: 140px;
   outline: none;
   color: #fff;
   border: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: black;
   transition: all 0.3s ease;
-  padding: 5px 10px;
+  padding: 8px 18px;
 }
 .onlinebooking form .button a:hover {
   background: rgb(63, 196, 6);
 }
 .onlinebooking form .button input {
-  width: 80px;
-  height: 30px;
-  padding: 5px 8px;
+  padding: 8px 18px;
   margin-left: 20px;
   border: none;
 }
+@media (max-width: 425px) {
+  .onlinebooking form .button input {
+    margin-left: 5px;
+  }
+}
 .onlinebooking form .button input:hover {
   background: rgb(63, 196, 6);
+}
+.onlinebooking .journey {
+  width: 65%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* inside the form gender details */
@@ -547,6 +627,8 @@ p {
   font-size: 16px;
   border: none;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  padding-right: 5px;
 }
 
 .user__details .input__box input:focus,
@@ -569,6 +651,11 @@ form .gender__details .category {
 .gender__details .category label {
   display: flex;
   align-items: center;
+}
+@media (max-width: 425px) {
+  .gender__details .category label {
+    font-size: 11px;
+  }
 }
 
 .gender__details .category .dot {
@@ -598,18 +685,20 @@ form .button {
   height: 45px;
 }
 
+.date {
+  color: #b4acac;
+}
+
 form .button .btn-conf {
-  height: 40px;
-  width: 140px;
   outline: none;
   color: #fff;
   border: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: black;
   transition: all 0.3s ease;
-  padding: 5px 10px;
+  padding: 8px 15px;
 }
 
 form .button a:hover {
@@ -617,15 +706,17 @@ form .button a:hover {
 }
 
 form .button input {
-  width: 80px;
-  height: 30px;
-  padding: 5px 8px;
+  padding: 8px 20px;
   margin-left: 20px;
   border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  background: rgb(63, 196, 6);
 }
 
 form .button input:hover {
-  background: rgb(63, 196, 6);
+  background-color: black;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -663,6 +754,21 @@ form .button input:hover {
   background-repeat: repeat;
   background-position: center center;
 }
+@media (max-width: 767px) {
+  .body_inner {
+    background-repeat: no-repeat;
+    height: 410px;
+    background-size: cover;
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .body_inner {
+    background-repeat: no-repeat;
+    height: 340px;
+    background-size: cover;
+  }
+}
 .body_inner header .top-navbar {
   padding: 18px;
 }
@@ -676,6 +782,7 @@ form .button input:hover {
   font-size: 13px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 @media (max-width: 992px) {
   .body_inner header .top-navbar .top-navbar-links {
@@ -691,7 +798,7 @@ form .button input:hover {
 .body_inner header .top-navbar .top-navbar-links li {
   margin-left: 15px;
 }
-@media (max-width: 425px) {
+@media (max-width: 992px) {
   .body_inner header .top-navbar .top-navbar-links li {
     margin-top: 10px;
   }
@@ -714,6 +821,11 @@ form .button input:hover {
     padding: 5px 10px;
   }
 }
+@media (max-width: 425px) {
+  .body_inner header .main-navbar {
+    padding: 0px;
+  }
+}
 .body_inner header .main-navbar .inner-navbar {
   align-items: center;
   justify-content: space-between;
@@ -730,6 +842,12 @@ form .button input:hover {
 @media (max-width: 767px) {
   .body_inner header .main-navbar .inner-navbar .web-logo .web-logo-img {
     width: 180px;
+    height: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .body_inner header .main-navbar .inner-navbar .web-logo .web-logo-img {
+    width: 100px;
     height: 40px;
   }
 }
@@ -755,26 +873,22 @@ form .button input:hover {
   background-color: #558e0a;
 }
 .body_inner header .main-navbar .inner-navbar .btn-ol-booking {
-  width: 170px;
-  height: 45px;
+  color: white;
   line-height: 45px;
   text-align: center;
-  background-color: #558e0a;
   border-radius: 25px;
   transition: 0.3s;
+  padding: 2px 15px;
+  border: 1px solid #558e0a;
 }
 @media (max-width: 992px) {
-  .body_inner header .main-navbar .inner-navbar .btn-ol-booking {
-    margin-left: 200px;
-  }
-}
-@media (max-width: 767px) {
   .body_inner header .main-navbar .inner-navbar .btn-ol-booking {
     display: none;
   }
 }
 .body_inner header .main-navbar .inner-navbar .btn-ol-booking:hover {
-  background-image: linear-gradient(to right, #aee468, #93f106);
+  background-color: #558e0a;
+  color: white;
 }
 .body_inner header .main-navbar.sticky {
   position: fixed;
@@ -785,7 +899,12 @@ form .button input:hover {
   box-shadow: 0 8px 6px -6px black;
   z-index: 999;
   padding: 5px 20px;
-  height: 100px;
+  height: 90px;
+}
+@media (max-width: 425px) {
+  .body_inner header .main-navbar.sticky {
+    padding: 40px 10px 5px 10px;
+  }
 }
 .body_inner header .main-navbar.sticky .inner-navbar nav .nav-links li a {
   color: black;
@@ -799,8 +918,20 @@ form .button input:hover {
   position: absolute;
   left: 0;
 }
-.body_inner header .main-navbar.sticky .inner-navbar .bars {
+.body_inner header .main-navbar.sticky .inner-navbar .mobile-btn-ol-booking {
   color: black;
+}
+.body_inner header .main-navbar.sticky .inner-navbar .mobile-btn-ol-booking:hover {
+  color: white;
+}
+.body_inner header .main-navbar.sticky .inner-navbar .btn-ol-booking {
+  color: black;
+}
+.body_inner header .main-navbar.sticky .responsive .hamburger-menu {
+  top: 0;
+}
+.body_inner header .main-navbar.sticky .responsive .menu-bar1, .body_inner header .main-navbar.sticky .responsive .menu-bar2, .body_inner header .main-navbar.sticky .responsive .menu-bar3 {
+  background-color: black;
 }
 
 .banner {
@@ -809,12 +940,12 @@ form .button input:hover {
 }
 @media (max-width: 992px) {
   .banner {
-    padding: 120px 0px 120px 0px;
+    padding: 10px 0px 10px 0px;
   }
 }
 @media (max-width: 767px) {
   .banner {
-    padding: 80px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
   }
 }
 @media (max-width: 425px) {
@@ -830,15 +961,25 @@ form .button input:hover {
   color: #558e0a;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
+  height: 130px;
 }
 @media (max-width: 992px) {
   .banner .inner-banner .banner-content .banner-title {
     font-size: 58px;
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .banner .inner-banner .banner-content .banner-title {
+    font-size: 38px;
+    height: 100px;
   }
 }
 @media (max-width: 425px) {
   .banner .inner-banner .banner-content .banner-title {
     font-size: 30px;
+    height: 70px;
+    margin-bottom: 10px;
   }
 }
 .banner .inner-banner .banner-content .banner-title .banner-title-animation {
@@ -849,6 +990,11 @@ form .button input:hover {
   color: white;
   transform: scale(0.84);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@media (max-width: 425px) {
+  .banner .inner-banner .banner-content .bannerinfo {
+    font-size: 10px;
+  }
 }
 @keyframes scale {
   100% {
@@ -909,6 +1055,11 @@ form .button input:hover {
 
 .Scheduled-info {
   padding-top: 50px;
+}
+@media (max-width: 425px) {
+  .Scheduled-info {
+    padding: 50px 10px 10px 10px;
+  }
 }
 @media (max-width: 425px) {
   .Scheduled-info .Scheduled-info-cards .Scheduled-info-carousel .item {
@@ -996,7 +1147,7 @@ form .button input:hover {
 
 footer {
   margin-top: 50px;
-  padding: 50px 0px 0px 0px;
+  padding: 50px 10px 10px 10px;
   background-color: black;
   color: white;
 }
@@ -1012,8 +1163,15 @@ footer .inner-footer .top-footer-links ul {
     flex-direction: column;
   }
 }
+footer .inner-footer .top-footer-links ul li {
+  margin-bottom: 10px;
+}
+footer .inner-footer .top-footer-links ul li a {
+  font-size: 13px;
+}
 footer .inner-footer .top-footer-links ul li i {
   margin-right: 10px;
+  font-size: 13px;
 }
 footer .inner-footer .top-footer-links ul li p {
   margin-bottom: 10px;
@@ -1037,13 +1195,14 @@ footer .inner-footer .bottom-footer-links p {
 @media (max-width: 992px) {
   .header-for-mobile {
     display: block;
-    z-index: 1;
+    z-index: 999;
     background-color: black;
     position: static;
     right: 0px;
     left: 0px;
     height: 100vh;
     padding: 2rem;
+    width: 100%;
   }
   .header-for-mobile button {
     width: 150px;
@@ -1061,10 +1220,48 @@ footer .inner-footer .bottom-footer-links p {
     font-size: 18px;
   }
   .bars {
-    display: block;
+    display: flex;
     font-size: 28px;
     margin-left: 10px;
   }
+  .bars .mobile-btn-ol-booking {
+    display: none;
+  }
+}
+@media (max-width: 992px) and (max-width: 992px) {
+  .bars .mobile-btn-ol-booking {
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 12px 12px;
+    border: 1px solid #558e0a;
+    font-size: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+}
+@media (max-width: 992px) and (max-width: 425px) {
+  .bars .mobile-btn-ol-booking {
+    font-size: 9px;
+  }
+}
+@media (max-width: 992px) and (max-width: 375px) {
+  .bars .mobile-btn-ol-booking {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 992px) {
+  .bars .mobile-btn-ol-booking:hover {
+    background-color: #558e0a;
+  }
+}
+@media (max-width: 992px) {
+  .bars a i {
+    color: white;
+  }
+}
+@media (max-width: 992px) {
   .nav-list li {
     display: none;
   }
@@ -1092,4 +1289,205 @@ footer .inner-footer .bottom-footer-links p {
   visibility: visible;
   opacity: 1;
   transition: all 1s ease;
+}
+
+.responsive {
+  /***********************/
+  /* NAVIGATION MENU */
+  /***********************/
+  /* OVERLAY */
+  /* NAV MENU ITEMS */
+  /***********************/
+  /* NAV SLIDE IN ANIMATION */
+  /***********************/
+  /***********************/
+  /* NAV SLIDE OUT ANIMATION */
+  /***********************/
+  /***********************/
+  /* HAMBURGER MENU ANIMATION */
+  /***********************/
+  /* ROTATE FIRST BAR */
+  /* FADE OUT SECOND BAR */
+  /* ROTATE LAST BAR */
+  /***********************/
+  /* SECTION */
+  /***********************/
+  /**************************/
+  /* MEDIA QUERY */
+  /**************************/
+  /* BELOW 832px (Tablets) */
+  /* BELOW 600px (Phones) */
+}
+.responsive .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.responsive .overlay {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.responsive .overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+.responsive .overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
+}
+.responsive nav ul {
+  height: 100vh;
+  list-style: none;
+}
+.responsive nav ul li {
+  height: 20%;
+}
+.responsive nav li:nth-of-type(1) {
+  background-color: #626059;
+}
+.responsive nav li:nth-of-type(2) {
+  background-color: #9d5543;
+  text-align: center;
+}
+.responsive nav li:nth-of-type(3) {
+  background-color: #3d405b;
+}
+.responsive nav li:nth-of-type(4) {
+  background-color: #5a7d6c;
+}
+.responsive nav li:nth-of-type(5) {
+  background-color: #917a56;
+}
+.responsive nav li a {
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+}
+.responsive nav li a:hover,
+.responsive nav li a:active {
+  transform: scale(1.1);
+}
+.responsive nav li a:hover:after {
+  content: "🠒";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+.responsive .slide-in-1 {
+  animation: slide-in 0.4s linear 0.2s both;
+}
+.responsive .slide-in-2 {
+  animation: slide-in 0.4s linear 0.4s both;
+}
+.responsive .slide-in-3 {
+  animation: slide-in 0.4s linear 0.6s both;
+}
+.responsive .slide-in-4 {
+  animation: slide-in 0.4s linear 0.8s both;
+}
+.responsive .slide-in-5 {
+  animation: slide-in 0.4s linear 1s both;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.responsive .slide-out-1 {
+  animation: slide-out 0.3s linear 0.5s both;
+}
+.responsive .slide-out-2 {
+  animation: slide-out 0.3s linear 0.4s both;
+}
+.responsive .slide-out-3 {
+  animation: slide-out 0.3s linear 0.3s both;
+}
+.responsive .slide-out-4 {
+  animation: slide-out 0.3s linear 0.2s both;
+}
+.responsive .slide-out-5 {
+  animation: slide-out 0.3s linear 0.1s both;
+}
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.responsive .hamburger-menu {
+  position: fixed;
+  top: 1.1rem;
+  z-index: 999;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .responsive .hamburger-menu {
+    top: 2.5rem;
+    right: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .responsive .hamburger-menu {
+    top: 2.5rem;
+    right: 1rem;
+  }
+}
+.responsive .menu-bar1,
+.responsive .menu-bar2,
+.responsive .menu-bar3 {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: white;
+  margin: 0.5rem 0;
+  transition: 0.4s;
+}
+.responsive .menu-bar2 {
+  width: 2rem;
+  margin-left: auto;
+  z-index: 999;
+}
+.responsive .active .menu-bar1 {
+  /* transform: rotate(-45deg) translate(-7px, 8px); */
+  transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
+  z-index: 999;
+}
+.responsive .active .menu-bar2 {
+  opacity: 0;
+}
+.responsive .active .menu-bar3 {
+  /* transform: rotate(45deg) translate(-6px, -8px); */
+  transform: rotate(45deg) translate(-0.6rem, -0.8rem);
+  z-index: 999;
+}
+@media (max-width: 52em) {
+  .responsive html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+@media (max-width: 589px) {
+  .responsive .hamburger-menu {
+    top: 2.9rem;
+    right: 0.4rem;
+    color: white;
+  }
+}
+@media (max-width: 525px) {
+  .responsive .hamburger-menu {
+    top: 0.9rem;
+    right: 0.4rem;
+    color: white;
+  }
 }/*# sourceMappingURL=styel.css.map */
