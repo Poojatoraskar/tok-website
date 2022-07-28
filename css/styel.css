@@ -947,7 +947,9 @@ form .button input:hover {
     right: 20px;
   }
 }
-.body_inner header .main-navbar.sticky .responsive .menu-bar1, .body_inner header .main-navbar.sticky .responsive .menu-bar2, .body_inner header .main-navbar.sticky .responsive .menu-bar3 {
+.body_inner header .main-navbar.sticky .responsive .menu-bar1,
+.body_inner header .main-navbar.sticky .responsive .menu-bar2,
+.body_inner header .main-navbar.sticky .responsive .menu-bar3 {
   background-color: black;
 }
 

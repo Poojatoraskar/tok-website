@@ -59,30 +59,7 @@ setInterval(function () {
 }, 1000);
 
 
-
-//  fix navbar
-
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() >= 200) {
-//     $('nav').addClass('fixed-header');
-//     $('nav div').addClass('visible-title');
-//   }
-//   else {
-//     $('nav').removeClass('fixed-header');
-//     $('nav div').removeClass('visible-title');
-//   }
-// });
-
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() >= 150) {
-//     $('.main-navbar').addClass('fixed-header');
-//     $('.main-navbar div').addClass('visible-title');
-//   }
-//   else {
-//     $('.main-navbar').removeClass('fixed-header');
-//     $('.main-navbar div').removeClass('visible-title');
-//   }
-// });
+// sticky navbar
 
 $(window).scroll(function(){
   if($(this).scrollTop() > 80){
@@ -91,6 +68,8 @@ $(window).scroll(function(){
       $('.main-navbar').removeClass('sticky')
   }
 });
+
+
 
 // banner text
 
@@ -107,7 +86,7 @@ $(function () {
 
 $(function () {
   $(".aboutus-title-animation").typed({
-    strings: [" About US .", " About US ."],
+    strings: [" About Us", " About Us"],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 1500,
@@ -118,7 +97,7 @@ $(function () {
 
 $(function () {
   $(".services-title-animation").typed({
-    strings: [" Services .", "  Services."],
+    strings: [" Services", "  Services"],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 1500,
@@ -130,7 +109,7 @@ $(function () {
 
 $(function () {
   $(".rate-title-animation").typed({
-    strings: [" Rate-Schedules.", " Rate-Schedules."],
+    strings: [" Rate-Schedules", " Rate-Schedules"],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 1500,
@@ -141,7 +120,7 @@ $(function () {
 
 $(function () {
   $(".online-title-animation").typed({
-    strings: [" - Booking.", "  -  Booking."],
+    strings: [" - Booking", "  -  Booking"],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 1500,
@@ -187,16 +166,7 @@ $('.Scheduled-info-carousel').owlCarousel({
 
 
 
-// Responsive navbar
-// function toggleNavBar() {
 
-//   console.log("hii")
-//   var headerRight = document.getElementById('headerRightformobile');
-
-//   console.log(headerRight.style.display, 'headerRight.style.display')
-
-//   headerRight.classList.toggle("header-for-mobile");
-// }
 
 
 
