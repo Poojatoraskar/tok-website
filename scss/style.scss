@@ -1,5 +1,6 @@
 @import'./helpers/helpers-dir';
 
+
 .body_inner {
     background-image: url(../assets/images/banner3.jpg);
     background-size: 100%;
@@ -620,12 +621,21 @@ footer {
             display: none;
 
             @include breakpoint(md) {
+                // display: block;
+                // text-align: center;
+                // border-radius: 25px;
+                // transition: 0.3s;
+                // padding: 12px 12px;
+                // border: 1px solid $main_color;
+                // font-size: 10px;
+                // margin-right: 10px;
+                // color: white;
                 display: block;
                 text-align: center;
                 border-radius: 25px;
                 transition: 0.3s;
                 padding: 12px 12px;
-                border: 1px solid $main_color;
+                border: 1px solid #558e0a;
                 font-size: 10px;
                 margin-right: 10px;
                 color: white;
@@ -688,6 +698,7 @@ footer {
 
 
 .responsive {
+    margin: 0px;
     .center {
         display: flex;
         align-items: center;
