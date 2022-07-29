@@ -1,162 +1,190 @@
-
-.onlinebooking{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.onlinebooking {
     padding-top: 50px;
 
 
     form {
-        background: #cec4c4;
         padding: 20px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 70%;
+        margin: 20px auto;
+        background: #bbe7a0bf;
+
+        @include breakpoint(sm) {
+
+            width: 100%;
+        }
     }
 
     form .user__details {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin: 20px 0 12px 0;
         flex-direction: row;
+        justify-content: space-between;
 
     }
 
     form .user__details .input__box {
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 0px);
         margin-bottom: 15px;
     }
-    .user__details .input__box .details {
-        font-weight: 500;
-        margin-bottom: 5px;
-        display: block;
-    }
-    
-    .user__details .input__box input {
-        height: 45px;
-        width: 300px;
-        outline: none;
-        padding-left: 15px;
-        font-size: 16px;
-        border: none;
-        transition: all 0.3s ease;
-    }
-    
-    .user__details .input__box input:focus,
-    .user__details .input__box input:valid {
-        border-color: var(#9b59b6);
-    }
-    
-    form .gender__details .gender__title {
-        font-size: 20px;
+
+    .date {
+        color: #837c7c;
         font-weight: 500;
     }
-    
-    form .gender__details .category {
-        display: flex;
-        width: 80%;
-        margin: 15px 0;
-        justify-content: flex-start;
-    }
-    
-    .gender__details .category label {
-        display: flex;
-        align-items: center;
-      span{
-        font-size: 15px;
-        @include breakpoint(xs){
-            font-size: 10px;
-        }
 
-      }
-    }
-    
-    .gender__details .category .dot {
-        height: 18px;
-        width: 18px;
-        background: #d9d9d9;
-        border-radius: 50%;
-        margin: 10px;
-        border: 5px solid transparent;
-        transition: all 0.3s ease;
+}
 
-       
-    }
-    
-    #dot-1:checked~.category .one,
-    #dot-2:checked~.category .two,
-    #dot-3:checked~.category .three {
-        border-color: #d9d9d9;
-        background: #9b59b6;
-        font-size: 13px;
-    }
-    
-    form input[type="radio"] {
-        display: none;
-    }
-    form .button {
-        height: 45px;
-    
-    }
-    
-    form .button .btn-conf {
-        // height: 40px;
-        // width: 140px;
-        outline: none;
-        color: #fff;
-        border: none;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius:25px;
-        background-color: black;
-        transition: all 0.3s ease;
-        padding: 8px 18px;
-    }
-    
-    form .button a:hover {
-        background: rgb(63, 196, 6);
-    }
-    form .button input{
-      
-        padding: 8px 18px;
-        margin-left: 20px;
-        border: none;
-        @include breakpoint (xs){
-            margin-left: 5px;
-        }
-
-    }
-    form .button input:hover {
-        background: rgb(63, 196, 6);
-      }
-      .journey{
-        width: 65%;
-        height: 40px;
-        border-radius: 10px;
-        padding: 5px;
-      }
-
+.journey {
+    width: 65%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 
 
+.user__details .input__box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 10px;
+}
 
+.user__details .input__box input {
+    height: 40px;
+    width: 90%;
+    outline: none;
+    padding: 0px 5px 0px 10px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+::placeholder {
+    color: #837c7c;
+    font-size: 13px;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+    border-color: var(#9b59b6);
+}
+
+form .gender__details .gender__title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+form .gender__details .category {
+    display: flex;
+    width: 80%;
+    margin: 15px 0;
+    justify-content: flex-start;
+}
+
+.gender__details .category label {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(xs) {
+        font-size: 11px;
+    }
+}
+
+.gender__details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #4e4c4c;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category .one,
+#dot-2:checked~.category .two,
+#dot-3:checked~.category .three {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+.gender__details .category .dot span {
+    font-size: 15px;
+}
 
 /* inside the form gender details */
 
 
 
 /* submit button */
+form .button {
+    height: 45px;
+    margin-left: 20px;
+}
 
+
+
+form .button .btn-conf {
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: black;
+    transition: all 0.3s ease;
+    padding: 10px 25px;
+
+    @include breakpoint(sm) {
+        padding: 11px 15px;
+        font-size: 11px;
+    }
+}
+
+form .button a:hover {
+    background: rgb(63, 196, 6);
+}
+
+form .button input {
+    padding: 10px 25px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    background: rgb(63, 196, 6);
+
+    @include breakpoint(sm) {
+        padding: 11px 15px;
+        font-size: 11px;
+    }
+
+
+}
+
+form .button input:hover {
+    background-color: black;
+    color: white;
+}
 
 @include breakpoint(sm) {
     .onlinebooking {
-        padding: 0px;
+        padding: 20px;
     }
 
-    // form .user__details .input__box {
-    //     width: 100%;
-    // }
+    form .user__details .input__box {
+        width: 100%;
+    }
 
     .onlinebooking form .user__details {
         display: block;
@@ -173,8 +201,8 @@
     }
 
     .container form .user__details {
-        max-height: 300px;
-        overflow-y: scroll;
+        width: 250px;
+
     }
 
     .user__details::-webkit-scrollbar {
@@ -184,5 +212,12 @@
     .user__details .input__box input {
         width: 300px;
 
+        @include breakpoint(sm) {
+            width: 250px;
+        }
+
+        @include breakpoint(xs) {
+            width: 230px;
+        }
     }
 }
