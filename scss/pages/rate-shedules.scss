@@ -1,14 +1,17 @@
-.rate-chart{
+.rate-chart {
     padding: 10px;
-    .chargecart{
-        padding-top:50px;
-        overflow-x:auto;
+
+    .chargecart {
+        padding-top: 50px;
+        overflow-x: auto;
     }
-    table{
+
+    table {
         width: 100%;
-      
+
     }
-    .chart_title{
+
+    .chart_title {
         font-size: 30px;
         font-family: "Roboto Slab", sans-serif;
         font-weight: 700;
@@ -16,99 +19,114 @@
         text-align: center;
         margin-top: 20px;
     }
-    .chargecart table{
-        width:700px;
-        height:345px;
+
+    .chargecart table {
+        width: 700px;
+        height: 345px;
         margin: 30px auto;
         background-color: rgb(233, 224, 224);
     }
-    .chargecart table th, td {
-        padding:15px;
+
+    .chargecart table th,
+    td {
+        padding: 15px;
         text-align: left;
         border: 1px solid rgb(196, 192, 192);
         font-family: "Varela Round", sans-serif;
         font-size: 16px;
-        font-weight: 400;  
-        Color:#454242;
+        font-weight: 400;
+        Color: #454242;
 
-        @include breakpoint(sm){
-            font-size:13px;
+        @include breakpoint(sm) {
+            font-size: 13px;
         }
-      }
-      
-    .chargecart table tr:hover {background-color: #848b8b;
+    }
+
+    .chargecart table tr:hover {
+        background-color: #848b8b;
         color: white;
     }
-    .chargecart table td:hover{
+
+    .chargecart table td:hover {
         color: white;
     }
-   
+
 }
-.winshoek_slider{
+
+.winshoek_slider {
     padding-top: 20px;
-    .windhoek_title{
+
+    .windhoek_title {
         font-family: "Roboto Slab", sans-serif;
         font-size: 32px;
         color: #558e0a;
-        @include breakpoint(sm){
-            font-size:23px;
+
+        @include breakpoint(sm) {
+            font-size: 23px;
             text-align: center;
         }
     }
-    .windhoek-carousel{
-        margin:20px auto;
+
+    .windhoek-carousel {
+        margin: 20px auto;
         padding: 20px;
     }
+
     .windhoek-carousel .item {
         height: 150px;
         color: white;
         text-align: center;
         border: 1px solid rgb(214, 209, 209);
-        border-radius:15px;
+        border-radius: 15px;
     }
-    
-    .windhoek_num{
-        font-size:30px;
+
+    .windhoek_num {
+        font-size: 30px;
         font-family: "Roboto Slab", sans-serif;
-        height:85px;
+        height: 85px;
         background-image: linear-gradient(to right, #52525b, #36363b);
-        line-height:85px;
-        border-radius:15px 15px 0px 0px;
+        line-height: 85px;
+        border-radius: 15px 15px 0px 0px;
         font-weight: 300;
-        @include breakpoint(sm){
-            font-size:20px;
+
+        @include breakpoint(sm) {
+            font-size: 20px;
             text-align: center;
         }
     }
-    .windhoek_info{
+
+    .windhoek_info {
         font-size: 16px;
         font-family: "Varela Round", sans-serif;
-        height:65px;
-        line-height:75px;
-        background-color:#558d0a;
-        border-radius:0px 0px 15px 15px;
+        height: 65px;
+        line-height: 75px;
+        background-color: #558d0a;
+        border-radius: 0px 0px 15px 15px;
         font-weight: 400;
     }
-    
-    .gaborone-carousel{
-        margin:20px auto;
+
+    .gaborone-carousel {
+        margin: 20px auto;
         padding: 20px;
     }
-    .gaborone_title{
+
+    .gaborone_title {
         font-family: "Roboto Slab", sans-serif;
         font-size: 32px;
         color: #558e0a;
-        @include breakpoint(sm){
-            font-size:23px;
+
+        @include breakpoint(sm) {
+            font-size: 23px;
             text-align: center;
         }
-    
+
     }
-    .gaborone-carousel .item{
+
+    .gaborone-carousel .item {
         height: 150px;
         color: white;
         text-align: center;
         border: 1px solid rgb(214, 209, 209);
-        border-radius:15px;
+        border-radius: 15px;
     }
 }
